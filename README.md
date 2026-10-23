@@ -11,7 +11,16 @@ This interactive brand guideline web portal showcases the complete brand identit
 
 ---
 
-## 🚀 Quick Start
+## 🌐 Live Deployment
+
+- **Live URL**: **[https://lawrencelyko.github.io/form-and-foundry/](https://lawrencelyko.github.io/form-and-foundry/)**
+- **GitHub Repository**: **[https://github.com/LawrenceLyko/form-and-foundry](https://github.com/LawrenceLyko/form-and-foundry)**
+
+Share this URL with anyone across any device or browser — no local files or setup needed.
+
+---
+
+## 🚀 Local Quick Start
 
 The local server is running at:
 **[http://localhost:3000](http://localhost:3000)**
@@ -34,7 +43,7 @@ Then open [http://localhost:3000](http://localhost:3000) in any browser.
 2. **Strict Ground Contrast Rule**:
    - **Bright / White / Off-White Grounds**: Automatically applies **Logo Charcoal** / **Logomark Charcoal**.
    - **Dark / Black / Charcoal Grounds**: Automatically applies **Logo Off White** / **Logomark Off White**.
-   - **Glossy Warm Artboards (Artboards 1–12)**: System enforces **Logo Charcoal** for maximum contrast against the luminous warm amber/gold ground (~175 luminance).
+   - **Glossy Warm Artboards (Artboards 1–12)**: Uses **Logo Off White** / **Logomark Off White** (design rule override for luminous contrast against the molten textures).
    - Dynamic synchronization with the light/dark theme switcher for the header, footer, and cards.
 
 3. **Glossy Artboards 1–12 Integration**:
