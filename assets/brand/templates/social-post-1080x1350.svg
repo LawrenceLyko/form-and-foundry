@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+<rect width="1080" height="1350" fill="#F7F5F0"/>
+<path d="M0 0H1080V190H0Z" fill="#1C1B1A"/>
+<g transform="translate(54 38) scale(.24)">
+<rect x="64" y="64" width="384" height="384" fill="#F7F5F0"/>
+<path d="M64 64H448L64 448Z" fill="#FF6B35"/>
+</g>
+<text x="190" y="94" font-family="Sora, Arial, sans-serif" font-size="34" font-weight="700" fill="#F7F5F0">FORM &amp; FOUNDRY</text>
+<text x="56" y="315" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="600" letter-spacing="4" fill="#FF6B35">BRAND THINKING / 001</text>
+<text x="56" y="465" font-family="Sora, Arial, sans-serif" font-size="94" font-weight="800" fill="#1C1B1A">RAW IDEAS.</text>
+<text x="56" y="570" font-family="Sora, Arial, sans-serif" font-size="94" font-weight="800" fill="#1C1B1A">SHARP</text>
+<text x="56" y="675" font-family="Sora, Arial, sans-serif" font-size="94" font-weight="800" fill="#1C1B1A">BRANDS.</text>
+<path d="M56 745H1024" stroke="#1C1B1A" stroke-width="5"/>
+<path d="M56 790H420L56 1154Z" fill="#FF6B35"/>
+<path d="M420 790H785L420 1155Z" fill="#1C1B1A"/>
+<path d="M785 790H1024V1029Z" fill="#FF6B35"/>
+<text x="56" y="1255" font-family="Inter, Arial, sans-serif" font-size="24" fill="#1C1B1A">Strategy. Design. Digital craft.</text>
+<text x="1024" y="1255" text-anchor="end" font-family="Sora, Arial, sans-serif" font-size="22" font-weight="700" fill="#1C1B1A">WE FORGE BRANDS.</text>
+</svg>

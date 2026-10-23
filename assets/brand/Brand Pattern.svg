@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="1210.18" height="730.16" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1210.18 730.16">
+  <defs>
+    <pattern id="F_F_Pattern_B_small" data-name="F&amp;amp;F Pattern B small" x="0" y="0" width="102.59" height="70.31" patternTransform="translate(-6550.36 -1322.04)" patternUnits="userSpaceOnUse" viewBox="0 0 102.59 70.31">
+      <g>
+        <rect x="0" y="0" width="102.59" height="70.31" fill="none"/>
+        <g>
+          <polygon points="88.45 35.56 68.39 70.31 108.51 70.31 88.45 35.56" fill="#1c1b1a"/>
+          <polygon points="116.72 69.89 96.67 35.15 136.78 35.15 116.72 69.89" fill="#1c1b1a"/>
+        </g>
+        <g>
+          <polygon points="37.16 53.14 17.1 87.88 57.21 87.88 37.16 53.14" fill="#1c1b1a"/>
+          <polygon points="65.43 87.47 45.37 52.73 85.49 52.73 65.43 87.47" fill="#1c1b1a"/>
+        </g>
+        <g>
+          <polygon points="-14.14 35.56 -34.2 70.31 5.92 70.31 -14.14 35.56" fill="#1c1b1a"/>
+          <polygon points="14.14 69.89 -5.92 35.15 34.2 35.15 14.14 69.89" fill="#1c1b1a"/>
+        </g>
+        <g>
+          <polygon points="88.45 .41 68.39 35.15 108.51 35.15 88.45 .41" fill="#1c1b1a"/>
+          <polygon points="116.72 34.74 96.67 0 136.78 0 116.72 34.74" fill="#1c1b1a"/>
+        </g>
+        <g>
+          <polygon points="37.16 17.99 17.1 52.73 57.21 52.73 37.16 17.99" fill="#1c1b1a"/>
+          <polygon points="65.43 52.32 45.37 17.58 85.49 17.58 65.43 52.32" fill="#1c1b1a"/>
+        </g>
+        <g>
+          <polygon points="-14.14 .41 -34.2 35.15 5.92 35.15 -14.14 .41" fill="#1c1b1a"/>
+          <polygon points="14.14 34.74 -5.92 0 34.2 0 14.14 34.74" fill="#1c1b1a"/>
+        </g>
+        <g>
+          <polygon points="37.16 -17.17 17.1 17.58 57.21 17.58 37.16 -17.17" fill="#1c1b1a"/>
+          <polygon points="65.43 17.17 45.37 -17.58 85.49 -17.58 65.43 17.17" fill="#1c1b1a"/>
+        </g>
+      </g>
+    </pattern>
+  </defs>
+  <g>
+    <path d="M505.44,690.37v-13.63h-3.26v-3.89h7.73v17.52h-4.46Z" fill="#ff6b35"/>
+    <path d="M515.21,690.37l5.71-13.46-.31-.41h-4.56v2.83h-3.6v-6.48h13.78v2.4l-6.26,15.12h-4.75Z" fill="#ff6b35"/>
+  </g>
+  <g>
+    <rect x="-154.12" y="-56.8" width="1527.39" height="819.75" rx="90.5" ry="90.5" fill="#ff6b35"/>
+    <rect x="-154.12" y="-56.8" width="1527.39" height="819.75" rx="90.5" ry="90.5" fill="url(#F_F_Pattern_B_small)" stroke="#ff6b35" stroke-miterlimit="10"/>
+  </g>
+</svg>

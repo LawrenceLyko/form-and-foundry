@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500">
+<rect width="1200" height="500" fill="#F7F5F0"/>
+<g font-family="Inter, Arial, sans-serif" fill="#1C1B1A">
+<text x="55" y="65" font-size="30" font-weight="700">FORM &amp; FOUNDRY / COLOUR SYSTEM</text>
+<rect x="55" y="105" width="340" height="245" fill="#1C1B1A"/>
+<rect x="430" y="105" width="340" height="245" fill="#F7F5F0" stroke="#1C1B1A" stroke-width="2"/>
+<rect x="805" y="105" width="340" height="245" fill="#FF6B35"/>
+<text x="55" y="395" font-size="25" font-weight="700">CHARCOAL</text><text x="55" y="435" font-size="22">#1C1B1A</text>
+<text x="430" y="395" font-size="25" font-weight="700">OFF WHITE</text><text x="430" y="435" font-size="22">#F7F5F0</text>
+<text x="805" y="395" font-size="25" font-weight="700">WARM ORANGE</text><text x="805" y="435" font-size="22">#FF6B35</text>
+</g></svg>

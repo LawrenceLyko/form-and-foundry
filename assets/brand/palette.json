@@ -1,0 +1,29 @@
+{
+  "Charcoal": {
+    "hex": "#1C1B1A",
+    "rgb": [
+      28,
+      27,
+      26
+    ],
+    "role": "Dominant text and background"
+  },
+  "Off White": {
+    "hex": "#F7F5F0",
+    "rgb": [
+      247,
+      245,
+      240
+    ],
+    "role": "Base backgrounds"
+  },
+  "Warm Orange": {
+    "hex": "#FF6B35",
+    "rgb": [
+      255,
+      107,
+      53
+    ],
+    "role": "Primary accent and CTAs"
+  }
+}

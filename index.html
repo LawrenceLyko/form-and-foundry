@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form &amp; Foundry — Brand Guidelines &amp; Design System</title>
+  <meta name="description" content="Official interactive brand guidelines for Form & Foundry: Brand Strategy & Growth Consultancy. We forge brands.">
+  <link rel="icon" type="image/svg+xml" href="assets/brand/logos/logomark-orange.svg">
+  
+  <!-- Google Fonts: Sora & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Sticky Top Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="brand-logo-lockup" title="Form & Foundry Brand System">
+        <!-- Dynamic Official Logomark (Charcoal on light grounds, Off-white on dark grounds) -->
+        <div id="header-official-mark" class="official-mark-wrapper">
+          <!-- Injected via app.js using official SVG -->
+        </div>
+        <span class="brand-name">FORM &amp; FOUNDRY</span>
+        <span class="brand-tag-small">GUIDELINE V1.0</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#intro" class="nav-link">01 Intro</a></li>
+          <li><a href="#strategy" class="nav-link">02 Strategy</a></li>
+          <li><a href="#logo-system" class="nav-link">03 Logo</a></li>
+          <li><a href="#colour-system" class="nav-link">04 Colour</a></li>
+          <li><a href="#typography" class="nav-link">05 Typography</a></li>
+          <li><a href="#graphic-language" class="nav-link">06 Graphic</a></li>
+          <li><a href="#glossy-artboards" class="nav-link" style="color:var(--color-orange);">06B Glossy Artboards</a></li>
+          <li><a href="#photography" class="nav-link">07 Photo</a></li>
+          <li><a href="#brand-voice" class="nav-link">08 Voice</a></li>
+          <li><a href="#applications" class="nav-link">09 Applications</a></li>
+          <li><a href="#guideline-inspector" class="nav-link" style="color:var(--color-orange);">42-Page PDF</a></li>
+          <li><a href="#assets-hub" class="nav-link">Assets</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="search-trigger-btn" class="search-trigger-btn" title="Quick Search (Ctrl+K)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <span>Search</span>
+          <span class="search-kbd">⌘K</span>
+        </button>
+
+        <button id="theme-toggle-btn" class="theme-toggle-btn" title="Toggle theme">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        </button>
+
+        <a href="assets/brand/Form_and_Foundry_Assets_Master.zip" download class="btn-primary" style="padding:0.45rem 1rem;font-size:0.8125rem;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>Download Kit</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <!-- Ambient Molten Fluid Layer from Artboard 6 -->
+    <div class="hero-ambient-glow"></div>
+
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-pill">
+          <span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--color-orange);"></span>
+          Brand Strategy &amp; Growth Consultancy
+        </div>
+        <h1 class="hero-title">
+          We forge <br><span class="emphasis">brands.</span>
+        </h1>
+        <p class="hero-desc">
+          Form &amp; Foundry turns raw ideas into distinctive, market-ready brands — combining sharp strategic positioning with hands-on identity design, digital execution, and high-impact visual systems.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#guideline-inspector" class="btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            <span>Inspect 42-Page Guideline</span>
+          </a>
+          <a href="#logo-system" class="btn-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            <span>Official Logo Playground</span>
+          </a>
+          <a href="#glossy-artboards" class="btn-secondary">
+            <span>✨ Artboards 1–12</span>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-value">42</div>
+            <div class="stat-label">Guideline Pages</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">12</div>
+            <div class="stat-label">Glossy Artboards</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">3</div>
+            <div class="stat-label">Core Colorways</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">1</div>
+            <div class="stat-label">Shared Truth</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Showcase Card with Glossy Artboard & Official Logo -->
+      <div id="hero-showcase-card" class="hero-visual-card cut-corner glossy-bg-1">
+        <div class="hero-card-inner-overlay">
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <div class="hero-badge-tag" style="margin:0;background:rgba(0,0,0,0.65);color:#FFFFFF;border:1px solid rgba(255,255,255,0.15);">
+              <span style="color:var(--color-orange);">●</span> Official Master Lockup
+            </div>
+            <span style="font-size:0.75rem;font-weight:700;color:#1C1B1A;background:rgba(255,255,255,0.85);padding:2px 8px;border-radius:var(--radius-pill);">
+              Charcoal on Glossy Field
+            </span>
+          </div>
+
+          <!-- Official Vector Logo Container -->
+          <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem 0;">
+            <div id="hero-card-official-mark" style="max-width:280px;width:100%;filter:drop-shadow(0 6px 16px rgba(0,0,0,0.35));">
+              <!-- Dynamically populated with official Logo Charcoal on artboard, or Logo Off-White on dark -->
+            </div>
+          </div>
+
+          <!-- Interactive Artboard Switcher for the Hero Card -->
+          <div style="text-align:center;">
+            <div style="font-size:0.7rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:rgba(255,255,255,0.8);margin-bottom:0.4rem;">
+              Select Glossy Background Image:
+            </div>
+            <div class="hero-artboard-switcher">
+              <button class="hero-artboard-pill active" data-artboard="artboard_1">Artboard 1 (Molten Gold)</button>
+              <button class="hero-artboard-pill" data-artboard="artboard_4">Artboard 4 (Fluted Amber)</button>
+              <button class="hero-artboard-pill" data-artboard="artboard_6">Artboard 6 (Liquid Forge)</button>
+              <button class="hero-artboard-pill" data-artboard="artboard_11">Artboard 11 (Reflective Core)</button>
+              <button class="hero-artboard-pill" data-artboard="dark">Matte Dark</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 01 Brand Introduction -->
+  <section id="intro" class="guideline-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-number">01 Introduction</div>
+        <h2 class="section-title">Brand Purpose &amp; Foundations</h2>
+        <p class="section-subtitle">
+          Form &amp; Foundry started from a simple frustration: most branding work stops at a logo, and most strategy work never becomes anything visible. We built a studio that does both.
+        </p>
+      </div>
+
+      <div class="grid-2" style="margin-bottom:2.5rem;">
+        <div class="brand-card cut-corner">
+          <div class="card-label">Mission</div>
+          <h3 class="card-title">Clarity in seconds. Craft for years.</h3>
+          <p class="card-text">
+            To forge brands with enough clarity to be understood in seconds, and enough craft to be remembered for years.
+          </p>
+        </div>
+
+        <div class="brand-card cut-corner">
+          <div class="card-label">Vision</div>
+          <h3 class="card-title">A brand as sharp as ambition.</h3>
+          <p class="card-text">
+            A world where every growing business has a brand as sharp as its ambition — not just a logo, but a full system for how it looks, sounds, and grows.
+          </p>
+        </div>
+      </div>
+
+      <!-- Core Values Interactive Grid -->
+      <div style="margin-bottom:3rem;">
+        <h4 style="font-size:1.15rem;font-weight:700;margin-bottom:1.25rem;display:flex;align-items:center;gap:0.5rem;">
+          <span style="color:var(--color-orange);">■</span> The 5 Core Values
+          <span style="font-size:0.8rem;color:var(--text-muted);font-weight:normal;">(Click each value to inspect)</span>
+        </h4>
+
+        <div class="grid-3" style="margin-bottom:1.5rem;">
+          <div class="value-pill-card active" data-index="0">
+            <div class="value-num">01</div>
+            <h4 style="font-size:1.1rem;font-weight:700;">Craft over convention</h4>
+          </div>
+          <div class="value-pill-card" data-index="1">
+            <div class="value-num">02</div>
+            <h4 style="font-size:1.1rem;font-weight:700;">Strategy before style</h4>
+          </div>
+          <div class="value-pill-card" data-index="2">
+            <div class="value-num">03</div>
+            <h4 style="font-size:1.1rem;font-weight:700;">Momentum — bias to shipping</h4>
+          </div>
+          <div class="value-pill-card" data-index="3">
+            <div class="value-num">04</div>
+            <h4 style="font-size:1.1rem;font-weight:700;">Boldness with intent</h4>
+          </div>
+          <div class="value-pill-card" data-index="4">
+            <div class="value-num">05</div>
+            <h4 style="font-size:1.1rem;font-weight:700;">Collaboration, not hand-off</h4>
+          </div>
+        </div>
+
+        <div id="value-detail-box" class="brand-card" style="background-color:var(--bg-secondary);border-left:4px solid var(--color-orange);padding:2rem;">
+          <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.75rem;">
+            <span class="value-num" style="font-size:1.1rem;margin:0;">01</span>
+            <h4 style="font-size:1.5rem;font-weight:800;">Craft over convention</h4>
+          </div>
+          <p style="font-size:1.125rem;color:var(--text-secondary);line-height:1.6;margin-bottom:1rem;">
+            Every detail is made with deliberate intent, not defaulted to industry habits.
+          </p>
+          <div style="display:inline-flex;align-items:center;gap:0.5rem;background:rgba(255,107,53,0.1);padding:0.35rem 0.75rem;border-radius:var(--radius-pill);font-size:0.8rem;color:var(--color-orange);font-weight:700;">
+            Guideline Principle: Always design with intent before execution.
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-3">
+        <div class="brand-card">
+          <div class="card-label">Positioning</div>
+          <h4 class="card-title">For Ambitious Founders</h4>
+          <p class="card-text">
+            The brand and growth partner for founders who are ready to stand out, not blend in — pairing sharp strategic thinking with distinctive design execution.
+          </p>
+        </div>
+        <div class="brand-card">
+          <div class="card-label">Audience</div>
+          <h4 class="card-title">Startups &amp; Scaling SMEs</h4>
+          <p class="card-text">
+            Founders, marketing leads, and product teams at ambitious startups who need their brand to work harder across identity, digital product, and marketing.
+          </p>
+        </div>
+        <div class="brand-card">
+          <div class="card-label">Personality</div>
+          <h4 class="card-title">The Creative Collaborator</h4>
+          <p class="card-text">
+            Energetic, direct, a little irreverent, always backed by a clear strategic reason for every creative choice.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 Brand Strategy -->
+  <section id="strategy" class="guideline-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-number">02 Strategy</div>
+        <h2 class="section-title">Strategic Architecture &amp; Voice</h2>
+        <p class="section-subtitle">
+          Strategy and design in one team, one sprint, one shared source of truth — no hand-off gap between the thinking and the making.
+        </p>
+      </div>
+
+      <div class="grid-2" style="margin-bottom:3rem;">
+        <div class="brand-card">
+          <div class="card-label">Unique Value Proposition</div>
+          <h3 class="card-title">Strategy and design in one room.</h3>
+          <p class="card-text">
+            Most agencies split strategy and execution across teams or vendors. Form &amp; Foundry keeps both in the same room, so nothing gets lost in translation.
+          </p>
+        </div>
+        <div class="brand-card">
+          <div class="card-label">Customer Perception Goal</div>
+          <h3 class="card-title">“They gave us a way of thinking.”</h3>
+          <p class="card-text">
+            “They didn’t just give us a brand — they gave us a way of thinking about our own business that we still use.”
+          </p>
+        </div>
+      </div>
+
+      <!-- The 5 Brand Pillars -->
+      <h3 style="font-size:1.5rem;font-weight:800;margin-bottom:1.5rem;">The 5 Brand Pillars</h3>
+      <div class="grid-3" style="margin-bottom:3.5rem;">
+        <div class="pillar-card cut-corner">
+          <svg class="pillar-triangle-icon" viewBox="0 0 24 24" fill="currentColor">
+            <polygon points="12,2 22,22 2,22"/>
+          </svg>
+          <div class="pillar-name">Craft</div>
+          <p class="pillar-statement">Every detail is made, not defaulted.</p>
+        </div>
+
+        <div class="pillar-card cut-corner">
+          <svg class="pillar-triangle-icon" viewBox="0 0 24 24" fill="currentColor">
+            <polygon points="12,2 22,22 2,22"/>
+          </svg>
+          <div class="pillar-name">Momentum</div>
+          <p class="pillar-statement">Ideas ship; progress beats perfection.</p>
+        </div>
+
+        <div class="pillar-card cut-corner">
+          <svg class="pillar-triangle-icon" viewBox="0 0 24 24" fill="currentColor">
+            <polygon points="12,2 22,22 2,22"/>
+          </svg>
+          <div class="pillar-name">Distinction</div>
+          <p class="pillar-statement">If it could be anyone’s, it isn’t ours.</p>
+        </div>
+
+        <div class="pillar-card cut-corner">
+          <svg class="pillar-triangle-icon" viewBox="0 0 24 24" fill="currentColor">
+            <polygon points="12,2 22,22 2,22"/>
+          </svg>
+          <div class="pillar-name">Partnership</div>
+          <p class="pillar-statement">Strategy and design in one room, with you.</p>
+        </div>
+
+        <div class="pillar-card cut-corner">
+          <svg class="pillar-triangle-icon" viewBox="0 0 24 24" fill="currentColor">
+            <polygon points="12,2 22,22 2,22"/>
+          </svg>
+          <div class="pillar-name">Build</div>
+          <p class="pillar-statement">Strategy becomes something you can see and use.</p>
+        </div>
+      </div>
+
+      <!-- Interactive Tone of Voice Sliders -->
+      <div class="voice-slider-container cut-corner">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;margin-bottom:2rem;">
+          <div>
+            <div class="card-label">Interactive Tone Simulator</div>
+            <h3 style="font-size:1.5rem;font-weight:800;">Tone of Voice Calibration</h3>
+          </div>
+          <div style="font-size:0.8125rem;color:var(--text-secondary);background:var(--bg-secondary);padding:0.4rem 0.85rem;border-radius:var(--radius-pill);border:1px solid var(--border-color);">
+            Slider Key: Calibration positions where Form &amp; Foundry sits
+          </div>
+        </div>
+
+        <div class="slider-group">
+          <div class="slider-labels">
+            <span>Formal</span>
+            <span class="calibrated">Form &amp; Foundry Target: 72% Casual</span>
+            <span>Casual</span>
+          </div>
+          <div class="custom-slider-track">
+            <input type="range" id="slider-formal-casual" class="slider-input tone-slider" min="0" max="100" value="72">
+          </div>
+          <div class="slider-meta">
+            <span>Corporate, stiff</span>
+            <span>Direct, conversational, creative collaborator</span>
+          </div>
+        </div>
+
+        <div class="slider-group">
+          <div class="slider-labels">
+            <span>Serious</span>
+            <span class="calibrated">Form &amp; Foundry Target: 82% Energetic</span>
+            <span>Energetic</span>
+          </div>
+          <div class="custom-slider-track">
+            <input type="range" id="slider-serious-energetic" class="slider-input tone-slider" min="0" max="100" value="82">
+          </div>
+          <div class="slider-meta">
+            <span>Dry, restrained</span>
+            <span>Driven, high pulse, passionate craft</span>
+          </div>
+        </div>
+
+        <div class="slider-group">
+          <div class="slider-labels">
+            <span>Technical</span>
+            <span class="calibrated">Form &amp; Foundry Target: 75% Accessible</span>
+            <span>Accessible</span>
+          </div>
+          <div class="custom-slider-track">
+            <input type="range" id="slider-technical-accessible" class="slider-input tone-slider" min="0" max="100" value="75">
+          </div>
+          <div class="slider-meta">
+            <span>Acronyms, deep jargon</span>
+            <span>No buzzwords, sharp clarity, human speak</span>
+          </div>
+        </div>
+
+        <div class="slider-group" style="margin-bottom:0;">
+          <div class="slider-labels">
+            <span>Corporate</span>
+            <span class="calibrated">Form &amp; Foundry Target: 65% Irreverent</span>
+            <span>Irreverent</span>
+          </div>
+          <div class="custom-slider-track">
+            <input type="range" id="slider-corporate-irreverent" class="slider-input tone-slider" min="0" max="100" value="65">
+          </div>
+          <div class="slider-meta">
+            <span>Vendor language, passive</span>
+            <span>Opinionated, punchy, confident partner</span>
+          </div>
+        </div>
+
+        <!-- Live Voice Dynamic Output Box -->
+        <div style="margin-top:2.5rem;padding:1.75rem;background:var(--bg-secondary);border-radius:var(--radius-md);border-left:3px solid var(--color-orange);">
+          <div style="font-size:0.75rem;font-weight:700;color:var(--color-orange);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.5rem;">
+            Live Voice Output (Adjust sliders above to test tone shift):
+          </div>
+          <p id="dynamic-voice-sample" style="font-family:var(--font-display);font-size:1.2rem;font-weight:600;line-height:1.5;">
+            “We forge brands with zero fluff. No corporate theater, no 80-page decks that collect dust. Strategy that ships, and design that punches above its weight.”
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 Official Logo System & Interactive Playground -->
+  <section id="logo-system" class="guideline-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-number">03 Logo System</div>
+        <h2 class="section-title">Official Master Logos &amp; Strict Contrast Rules</h2>
+        <p class="section-subtitle">
+          Using official vector artwork. Rule: <strong>Logo Charcoal</strong> on bright/white backgrounds and glossy artboards; <strong>Logo Off White</strong> on dark/black backgrounds.
+        </p>
+      </div>
+
+      <!-- Overview Cards -->
+      <div class="grid-3" style="margin-bottom:2.5rem;">
+        <div class="brand-card">
+          <div class="card-label">Primary Logo (Stacked)</div>
+          <h4 class="card-title">Default Master Lockup</h4>
+          <p class="card-text">
+            Official forged-block mark above the wordmark. Use Charcoal on bright/white/artboards; use Off White on dark/black backgrounds.
+          </p>
+        </div>
+
+        <div class="brand-card">
+          <div class="card-label">Secondary Logo (Horizontal)</div>
+          <h4 class="card-title">Horizontal Ribbons</h4>
+          <p class="card-text">
+            Mark on the left, two-line wordmark on the right. Official geometry for headers, navigation bars, digital footers, and signage.
+          </p>
+        </div>
+
+        <div class="brand-card">
+          <div class="card-label">Standalone Logomark</div>
+          <h4 class="card-title">The Raw Block Motif</h4>
+          <p class="card-text">
+            The authentic bisected forged block glyph. Favicons, avatars, wax seals, stamps, and embossing. Never use custom-drawn substitutes.
+          </p>
+        </div>
+      </div>
+
+      <!-- Interactive Logo Playground Component -->
+      <div class="logo-playground">
+        <div class="playground-toolbar">
+          <div class="toolbar-group">
+            <span class="toolbar-label">Mark:</span>
+            <button class="btn-pill active" data-logotype="primary">Primary (Stacked)</button>
+            <button class="btn-pill" data-logotype="horizontal">Secondary (Horizontal)</button>
+            <button class="btn-pill" data-logotype="mark">Standalone Mark</button>
+          </div>
+
+          <div class="toolbar-group">
+            <span class="toolbar-label">Ground:</span>
+            <button class="color-swatch-toggle active" data-logobg="charcoal" style="background:#1C1B1A;" title="Charcoal Ground (Applies Logo Off White)"></button>
+            <button class="color-swatch-toggle" data-logobg="offwhite" style="background:#F7F5F0;" title="Off White Ground (Applies Logo Charcoal)"></button>
+            <button class="color-swatch-toggle" data-logobg="orange" style="background:#FF6B35;" title="Warm Orange Ground (Applies Logo Charcoal)"></button>
+            <button class="btn-pill" data-logobg="artboard-1" style="font-size:0.75rem;">✨ Artboard 1</button>
+            <button class="btn-pill" data-logobg="artboard-6" style="font-size:0.75rem;">✨ Artboard 6</button>
+            <button class="btn-pill" data-logobg="artboard-11" style="font-size:0.75rem;">✨ Artboard 11</button>
+          </div>
+
+          <div class="toolbar-group">
+            <button id="clearspace-toggle" class="btn-pill">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:4px;"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 3v18"/><path d="M15 3v18"/><path d="M3 9h18"/><path d="M3 15h18"/></svg>
+              Clear Space (1/6th)
+            </button>
+          </div>
+        </div>
+
+        <!-- Playground Stage -->
+        <div id="logo-stage" class="playground-stage bg-charcoal">
+          <div id="logo-wrapper" class="logo-display-wrapper">
+            <!-- Dynamic Official SVG injected here -->
+          </div>
+
+          <!-- Clear Space Overlay (1/6th margin) -->
+          <div id="clear-space-overlay" class="clear-space-box">
+            <span class="clear-space-dimension-tag" style="top:-14px;left:50%;transform:translateX(-50%);">1/6th (~16%) Clear Space Margin</span>
+          </div>
+        </div>
+
+        <!-- Playground Footer Controls -->
+        <div class="playground-footer">
+          <div style="display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;">
+            <div style="display:flex;align-items:center;gap:0.75rem;">
+              <span class="toolbar-label">Scale:</span>
+              <input type="range" id="logo-size-slider" min="28" max="420" value="200" style="width:140px;cursor:pointer;">
+              <span id="logo-size-val" style="font-family:monospace;font-size:0.875rem;font-weight:700;">200px</span>
+            </div>
+            <div id="min-size-indicator" class="min-size-badge pass">
+              ✓ Compliant Size
+            </div>
+            <div id="ground-contrast-note"></div>
+          </div>
+
+          <div style="display:flex;gap:0.75rem;">
+            <button id="download-active-logo-btn" class="btn-primary" style="padding:0.45rem 1rem;font-size:0.8125rem;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download Official SVG
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contrast Rule Callout Box -->
+      <div class="brand-card cut-corner" style="margin-top:2.5rem;background:var(--bg-secondary);border-left:4px solid var(--color-orange);">
+        <div class="card-label">Contrast Standard</div>
+        <h4 style="font-size:1.25rem;font-weight:800;margin-bottom:0.5rem;">The Ground Contrast Rule</h4>
+        <p class="card-text" style="font-size:1rem;color:var(--text-primary);line-height:1.6;">
+          Always use <strong>Logo Charcoal</strong> on bright, white, or off-white grounds and on glossy warm Artboards 1–12. Always use <strong>Logo Off White</strong> on dark, black, or Charcoal grounds. This ensures maximum visual impact, mathematical legibility, and strict alignment with the Form &amp; Foundry brand guidelines.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 Colour System -->
+  <section id="colour-system" class="guideline-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-number">04 Colour System</div>
+        <h2 class="section-title">The Master Palette &amp; Contrast Ratio</h2>
+        <p class="section-subtitle">
+          50% Charcoal, 35% Warm Orange, 15% Off White — a noticeably bolder, warmer balance than typical black-and-white studio identities.
+        </p>
+      </div>
+
+      <!-- Application Ratio Bar -->
+      <div class="ratio-bar-wrapper">
+        <div class="ratio-bar-header">
+          <span>Application Ratio Distribution</span>
+          <span style="color:var(--color-orange);">50% Charcoal / 35% Warm Orange / 15% Off White</span>
+        </div>
+        <div class="ratio-bar">
+          <div class="ratio-segment ratio-charcoal" style="width:50%;">50% Charcoal</div>
+          <div class="ratio-segment ratio-orange" style="width:35%;">35% Orange</div>
+          <div class="ratio-segment ratio-offwhite" style="width:15%;">15% Off White</div>
+        </div>
+      </div>
+
+      <!-- Core Swatches -->
+      <div class="grid-3" style="margin-bottom:3rem;">
+        <!-- Charcoal -->
+        <div class="swatch-card cut-corner" onclick="copyText('#1C1B1A', 'Charcoal HEX Copied')">
+          <div class="swatch-color-box" style="background-color:#1C1B1A;">
+            <span style="color:#FFFFFF;background:rgba(0,0,0,0.5);font-size:0.75rem;padding:2px 8px;border-radius:4px;font-weight:700;">Click to Copy</span>
+          </div>
+          <div class="swatch-details">
+            <div class="swatch-name">Charcoal</div>
+            <div class="swatch-role">Dominant text, dark-mode surfaces, grounding canvas</div>
+            <div class="swatch-values">
+              <div class="swatch-val-row"><span class="val-label">HEX</span><span class="val-text">#1C1B1A</span></div>
+              <div class="swatch-val-row"><span class="val-label">RGB</span><span class="val-text">28, 27, 26</span></div>
+              <div class="swatch-val-row"><span class="val-label">CMYK</span><span class="val-text">70, 65, 64, 75</span></div>
+              <div class="swatch-val-row"><span class="val-label">Pantone</span><span class="val-text">Black 7 C</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Warm Orange -->
+        <div class="swatch-card cut-corner" onclick="copyText('#FF6B35', 'Warm Orange HEX Copied')">
+          <div class="swatch-color-box" style="background-color:#FF6B35;">
+            <span style="color:#FFFFFF;background:rgba(0,0,0,0.5);font-size:0.75rem;padding:2px 8px;border-radius:4px;font-weight:700;">Click to Copy</span>
+          </div>
+          <div class="swatch-details">
+            <div class="swatch-name">Warm Orange</div>
+            <div class="swatch-role">Primary accent, forge heat, CTAs, directional lighting</div>
+            <div class="swatch-values">
+              <div class="swatch-val-row"><span class="val-label">HEX</span><span class="val-text">#FF6B35</span></div>
+              <div class="swatch-val-row"><span class="val-label">RGB</span><span class="val-text">255, 107, 53</span></div>
+              <div class="swatch-val-row"><span class="val-label">CMYK</span><span class="val-text">0, 71, 85, 0</span></div>
+              <div class="swatch-val-row"><span class="val-label">Pantone</span><span class="val-text">1655 C</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Off White -->
+        <div class="swatch-card cut-corner" onclick="copyText('#F7F5F0', 'Off White HEX Copied')">
+          <div class="swatch-color-box" style="background-color:#F7F5F0;border-bottom:1px solid rgba(0,0,0,0.06);">
+            <span style="color:#1C1B1A;background:rgba(255,255,255,0.8);font-size:0.75rem;padding:2px 8px;border-radius:4px;font-weight:700;">Click to Copy</span>
+          </div>
+          <div class="swatch-details">
+            <div class="swatch-name">Off White</div>
+            <div class="swatch-role">Base backgrounds, breathing room, editorial warmth</div>
+            <div class="swatch-values">
+              <div class="swatch-val-row"><span class="val-label">HEX</span><span class="val-text">#F7F5F0</span></div>
+              <div class="swatch-val-row"><span class="val-label">RGB</span><span class="val-text">247, 245, 240</span></div>
+              <div class="swatch-val-row"><span class="val-label">CMYK</span><span class="val-text">2, 2, 4, 0</span></div>
+              <div class="swatch-val-row"><span class="val-label">Pantone</span><span class="val-text">Warm Gray 1 C</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Extended Tints & Accessible Shades (Rebuild Decision 2) -->
+      <div style="margin-bottom:3.5rem;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:1.5rem;flex-wrap:wrap;gap:1rem;">
+          <div>
+            <div class="card-label">Extended Tints &amp; Functional Shades</div>
+            <h3 style="font-size:1.5rem;font-weight:800;">Digital Hierarchy &amp; Accessibility Ramp</h3>
+          </div>
+          <div style="font-size:0.8125rem;color:var(--text-muted);">
+            Includes Decision 2 Accessible Shades for Off-White backgrounds
+          </div>
+        </div>
+
+        <div class="grid-4">
+          <div class="brand-card" style="cursor:pointer;" onclick="copyText('#D25B30', 'Copied Shade 1')">
+            <div style="height:48px;background:#D25B30;border-radius:var(--radius-sm);margin-bottom:1rem;"></div>
+            <div style="font-size:0.875rem;font-weight:700;">Shade 1 (Accessible Orange)</div>
+            <div style="font-family:monospace;font-size:0.8rem;color:var(--color-orange);margin:0.25rem 0;">#D25B30</div>
+            <div style="font-size:0.75rem;color:var(--text-muted);">Large headings on Off-White (4.5:1 AA compliant)</div>
+          </div>
+
+          <div class="brand-card" style="cursor:pointer;" onclick="copyText('#A44B2A', 'Copied Shade 2')">
+            <div style="height:48px;background:#A44B2A;border-radius:var(--radius-sm);margin-bottom:1rem;"></div>
+            <div style="font-size:0.875rem;font-weight:700;">Shade 2 (Deep Rust)</div>
+            <div style="font-family:monospace;font-size:0.8rem;color:var(--color-orange);margin:0.25rem 0;">#A44B2A</div>
+            <div style="font-size:0.75rem;color:var(--text-muted);">Small text on Off-White (7.0:1 AAA compliant)</div>
+          </div>
+
+          <div class="brand-card" style="cursor:pointer;" onclick="copyText('#FF8559', 'Copied Tint 1')">
+            <div style="height:48px;background:#FF8559;border-radius:var(--radius-sm);margin-bottom:1rem;"></div>
+            <div style="font-size:0.875rem;font-weight:700;">Tint 1 (Light Orange)</div>
+            <div style="font-family:monospace;font-size:0.8rem;color:var(--color-orange);margin:0.25rem 0;">#FF8559</div>
+            <div style="font-size:0.75rem;color:var(--text-muted);">Hover states, gradients, subtle highlights</div>
+          </div>
+
+          <div class="brand-card" style="cursor:pointer;" onclick="copyText('#2A2928', 'Copied Charcoal Slate')">
+            <div style="height:48px;background:#2A2928;border-radius:var(--radius-sm);margin-bottom:1rem;"></div>
+            <div style="font-size:0.875rem;font-weight:700;">Charcoal Slate</div>
+            <div style="font-family:monospace;font-size:0.8rem;color:var(--color-orange);margin:0.25rem 0;">#2A2928</div>
+            <div style="font-size:0.75rem;color:var(--text-muted);">Card borders, dividers, subtle surfaces</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- WCAG Contrast Matrix & Live Inspector -->
+      <div class="contrast-matrix-container cut-corner">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:1.5rem;margin-bottom:2rem;">
+          <div>
+            <div class="card-label">Accessibility Audit</div>
+            <h3 style="font-size:1.5rem;font-weight:800;">WCAG 2.1 Contrast Standards</h3>
+            <p class="card-text" style="max-width:640px;margin-top:0.5rem;">
+              Strict adherence to readable contrast. Pure Warm Orange (#FF6B35) on Off White achieves only <strong>2.6:1</strong>, failing body text requirements — use Shade 1 (#D25B30) or Charcoal text instead.
+            </p>
+          </div>
+
+          <!-- Live Custom Pair Tester -->
+          <div style="background:var(--bg-secondary);padding:1.25rem;border-radius:var(--radius-md);border:1px solid var(--border-color);display:flex;flex-direction:column;gap:0.75rem;min-width:280px;">
+            <div style="font-size:0.75rem;font-weight:700;text-transform:uppercase;color:var(--text-muted);">Custom Contrast Tester:</div>
+            <div style="display:flex;align-items:center;gap:0.75rem;">
+              <input type="color" id="contrast-fg" value="#FF6B35" title="Foreground Color" style="cursor:pointer;width:38px;height:38px;border:none;background:none;">
+              <span style="font-size:0.8rem;">on</span>
+              <input type="color" id="contrast-bg" value="#1C1B1A" title="Background Color" style="cursor:pointer;width:38px;height:38px;border:none;background:none;">
+              <div id="custom-contrast-ratio" style="font-family:monospace;font-size:1.1rem;font-weight:800;margin-left:auto;">5.4:1</div>
+            </div>
+            <div id="custom-contrast-badge" class="contrast-badge pass-aa">Pass AA</div>
+            <div id="contrast-preview-sample" style="padding:0.5rem;border-radius:4px;font-size:0.8125rem;font-weight:700;text-align:center;">
+              Preview Sample
+            </div>
+          </div>
+        </div>
+
+        <div class="contrast-row">
+          <div>
+            <strong>Charcoal on Off White</strong>
+            <div style="font-size:0.8rem;color:var(--text-muted);">#1C1B1A on #F7F5F0 — Primary editorial &amp; body text</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:1.5rem;">
+            <span style="font-family:monospace;font-weight:700;">16.2:1</span>
+            <span class="contrast-badge pass-aaa">Pass AAA (Enhanced)</span>
+          </div>
+        </div>
+
+        <div class="contrast-row">
+          <div>
+            <strong>Warm Orange on Charcoal</strong>
+            <div style="font-size:0.8rem;color:var(--text-muted);">#FF6B35 on #1C1B1A — Hero buttons, active tags, emphasis</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:1.5rem;">
+            <span style="font-family:monospace;font-weight:700;">5.4:1</span>
+            <span class="contrast-badge pass-aa">Pass AA (Standard)</span>
+          </div>
+        </div>
+
+        <div class="contrast-row">
+          <div>
+            <strong>Shade 1 on Off White (Decision 2 Fix)</strong>
+            <div style="font-size:0.8rem;color:var(--text-muted);">#D25B30 on #F7F5F0 — Large headings and titles on light pages</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:1.5rem;">
+            <span style="font-family:monospace;font-weight:700;">4.5:1</span>
+            <span class="contrast-badge pass-aa">Pass AA (Large Text)</span>
+          </div>
+        </div>
+
+        <div class="contrast-row">
+          <div>
+            <strong>Warm Orange on Off White (Warning)</strong>
+            <div style="font-size:0.8rem;color:var(--text-muted);">#FF6B35 on #F7F5F0 — Only allowed for graphic fills &amp; large displays</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:1.5rem;">
+            <span style="font-family:monospace;font-weight:700;">2.6:1</span>
+            <span class="contrast-badge fail">Fail (Display Only)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 Typography -->
+  <section id="typography" class="guideline-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-number">05 Typography</div>
+        <h2 class="section-title">Typeface Pairing &amp; Modular Scale</h2>
+        <p class="section-subtitle">
+          Sora delivers industrial precision for headlines and display. Inter provides neutral, highly readable structure for body copy and digital product interfaces.
+        </p>
+      </div>
+
+      <div class="grid-2" style="margin-bottom:3rem;">
+        <div class="brand-card">
+          <div class="card-label">Primary Typeface — Headlines &amp; Display</div>
+          <h3 class="card-title" style="font-family:'Sora',sans-serif;font-weight:800;font-size:2.5rem;margin-bottom:0.75rem;">Sora</h3>
+          <p class="card-text" style="margin-bottom:1.25rem;">
+            A geometric sans-serif with industrial proportions and distinctive visual cutaways. Used for headlines, section titles, strong emphasis words, and master lockups.
+          </p>
+          <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+            <span class="btn-pill" style="font-family:'Sora';font-weight:300;">Light 300</span>
+            <span class="btn-pill" style="font-family:'Sora';font-weight:400;">Regular 400</span>
+            <span class="btn-pill" style="font-family:'Sora';font-weight:600;">SemiBold 600</span>
+            <span class="btn-pill active" style="font-family:'Sora';font-weight:700;">Bold 700</span>
+            <span class="btn-pill" style="font-family:'Sora';font-weight:800;">ExtraBold 800</span>
+          </div>
+        </div>
+
+        <div class="brand-card">
+          <div class="card-label">Secondary Typeface — Body &amp; Interface</div>
+          <h3 class="card-title" style="font-family:'Inter',sans-serif;font-weight:700;font-size:2.5rem;margin-bottom:0.75rem;">Inter</h3>
+          <p class="card-text" style="margin-bottom:1.25rem;">
+            Engineered specifically for screen readability, dense information architecture, metadata, UI controls, and multi-paragraph strategic reports.
+          </p>
+          <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+            <span class="btn-pill" style="font-family:'Inter';font-weight:400;">Regular 400</span>
+            <span class="btn-pill" style="font-family:'Inter';font-weight:500;">Medium 500</span>
+            <span class="btn-pill active" style="font-family:'Inter';font-weight:600;">SemiBold 600</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Type Sandbox -->
+      <div class="type-sandbox">
+        <div class="sandbox-controls">
+          <div>
+            <label class="val-label">Font Family</label>
+            <select id="font-select" style="width:100%;padding:0.45rem;background:var(--bg-card);color:var(--text-primary);border:1px solid var(--border-color);border-radius:4px;font-family:inherit;">
+              <option value="Sora">Sora (Display)</option>
+              <option value="Inter">Inter (Body)</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="val-label">Weight</label>
+            <select id="weight-select" style="width:100%;padding:0.45rem;background:var(--bg-card);color:var(--text-primary);border:1px solid var(--border-color);border-radius:4px;font-family:inherit;">
+              <option value="800">800 ExtraBold</option>
+              <option value="700" selected>700 Bold</option>
+              <option value="600">600 SemiBold</option>
+              <option value="400">400 Regular</option>
+              <option value="300">300 Light</option>
+            </select>
+          </div>
+
+          <div>
+            <div style="display:flex;justify-content:space-between;">
+              <label class="val-label">Size</label>
+              <span id="type-size-display" class="val-label" style="color:var(--color-orange);">48px</span>
+            </div>
+            <input type="range" id="type-size-slider" min="16" max="96" value="48" style="width:100%;cursor:pointer;">
+          </div>
+
+          <div>
+            <div style="display:flex;justify-content:space-between;">
+              <label class="val-label">Tracking</label>
+              <span id="type-tracking-display" class="val-label" style="color:var(--color-orange);">-0.02em</span>
+            </div>
+            <input type="range" id="type-tracking-slider" min="-0.05" max="0.15" step="0.01" value="-0.02" style="width:100%;cursor:pointer;">
+          </div>
+        </div>
+
+        <div class="sandbox-input-area">
+          <input type="text" id="type-preview-text" class="type-editable-preview" value="We forge brands with clarity & craft.">
+        </div>
+
+        <div style="padding:1rem 2rem;background:var(--bg-secondary);border-top:1px solid var(--border-color);display:flex;justify-content:space-between;align-items:center;">
+          <span style="font-size:0.8rem;color:var(--text-muted);">Click text above to test any headline or copy</span>
+          <button id="copy-type-css-btn" class="btn-secondary" style="padding:0.35rem 0.85rem;font-size:0.75rem;">
+            Copy CSS Rule
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 Graphic Language & Brand Pattern -->
+  <section id="graphic-language" class="guideline-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-number">06 Graphic Language</div>
+        <h2 class="section-title">Geometric Shapes &amp; Official Brand Pattern</h2>
+        <p class="section-subtitle">
+          Squares, triangles, and the raw block cutaway. Features the official repeating triangular Brand Pattern and master icon set.
+        </p>
+      </div>
+
+      <div class="grid-3" style="margin-bottom:3rem;">
+        <div class="brand-card cut-corner">
+          <div class="card-label">Core Geometry</div>
+          <h4 class="card-title">45° Clipped Corner</h4>
+          <p class="card-text">
+            Brand surfaces, hero cards, and print collateral carry the signature 45-degree corner cut, echoing the diagonal bisecting line of the raw forged block.
+          </p>
+        </div>
+
+        <div class="brand-card">
+          <div class="card-label">Interface Shapes</div>
+          <h4 class="card-title">Soft Pills for Controls</h4>
+          <p class="card-text">
+            In accordance with Decision 1, pill and rounded shapes are reserved for interactive interface controls (buttons, badges, tabs) to ensure intuitive ergonomics.
+          </p>
+        </div>
+
+        <div class="brand-card">
+          <div class="card-label">Iconography System</div>
+          <h4 class="card-title">Solid Geometric Silhouettes</h4>
+          <p class="card-text">
+            Solid, filled geometric shapes built on a square grid with single Warm Orange accents. Master vector sheet included below.
+          </p>
+        </div>
+      </div>
+
+      <!-- Live Official Brand Pattern Interactive Visualizer -->
+      <div class="brand-card cut-corner" style="padding:2.5rem;margin-bottom:3.5rem;">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;margin-bottom:1.5rem;">
+          <div>
+            <div class="card-label">Official Pattern Asset</div>
+            <h3 style="font-size:1.6rem;font-weight:800;">Official Brand Pattern (`Brand Pattern.svg`)</h3>
+            <p class="card-text">Repeating triangular geometry representing the tessellated forged block matrix.</p>
+          </div>
+          <div style="display:flex;align-items:center;gap:1.5rem;">
+            <div style="display:flex;align-items:center;gap:0.75rem;">
+              <span class="val-label">Scale:</span>
+              <input type="range" id="pattern-scale-slider" min="60" max="300" value="140" style="width:120px;cursor:pointer;">
+              <span id="pattern-scale-val" style="font-family:monospace;font-size:0.8rem;font-weight:700;">140px</span>
+            </div>
+            <a href="assets/brand/Brand Pattern.svg" download class="btn-primary" style="padding:0.45rem 1rem;font-size:0.8125rem;">
+              Download Pattern SVG
+            </a>
+          </div>
+        </div>
+
+        <div class="brand-pattern-stage">
+          <div id="live-brand-pattern-bg" class="brand-pattern-bg"></div>
+          <div class="pattern-center-badge cut-corner">
+            <span style="font-family:var(--font-display);font-size:1.1rem;font-weight:800;letter-spacing:0.04em;">FORM &amp; FOUNDRY</span>
+            <div style="font-size:0.75rem;color:var(--color-orange);margin-top:0.25rem;font-weight:700;">OFFICIAL GEOMETRIC PATTERN</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Brand Icons Master Sheet Showcase -->
+      <div class="brand-icons-sheet-card cut-corner" style="padding:2.5rem;">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;margin-bottom:1.5rem;">
+          <div>
+            <div class="card-label">Vector Icons Library</div>
+            <h3 style="font-size:1.6rem;font-weight:800;color:#F7F5F0;">Official Brand Icons (`Brand Icons.svg`)</h3>
+            <p style="color:#B5B2AC;font-size:0.95rem;">Full 3838×2585 master vector artboard with 24 outlined icon categories.</p>
+          </div>
+          <div style="display:flex;gap:0.75rem;">
+            <a href="assets/brand/Brand Icons.svg" download class="btn-primary" style="padding:0.45rem 1rem;font-size:0.8125rem;">
+              Download Icons SVG
+            </a>
+          </div>
+        </div>
+
+        <div style="border:1px solid rgba(255,255,255,0.1);border-radius:var(--radius-md);overflow:hidden;background:#0A0A0A;">
+          <img src="assets/brand/brand_icons_sheet.png" alt="Brand Icons Master Sheet" class="icons-sheet-preview" onclick="openLightbox('assets/brand/brand_icons_sheet.png', 'Form & Foundry — Official Brand Icons Vector Sheet (3838×2585)')" title="Click to zoom full resolution">
+        </div>
+        <div style="margin-top:0.75rem;font-size:0.8rem;color:var(--text-muted);text-align:right;">
+          Click sheet preview above to inspect in full-resolution Lightbox
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06B Dedicated Glossy Imagery Showcase (Artboards 1–12) -->
+  <section id="glossy-artboards" class="guideline-section" style="background:linear-gradient(180deg, rgba(255,107,53,0.03) 0%, rgba(28,27,26,0.6) 100%);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-number">06B Glossy Imagery</div>
+        <h2 class="section-title">Glossy Molten Artboards 1–12</h2>
+        <p class="section-subtitle">
+          High-impact glossy, liquid 3D imagery crafted to replace plain background imagery for hero backdrops, packaging wraps, transit screens, and stage keynotes. Rule: <strong>Logo Charcoal</strong> provides crisp contrast over luminous warm artboards.
+        </p>
+      </div>
+
+      <!-- Mode Switcher -->
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;margin-bottom:1.5rem;">
+        <div class="artboard-mode-switcher">
+          <span class="val-label" style="margin-right:0.5rem;">Overlay Mode:</span>
+          <button class="artboard-mode-btn btn-pill active" data-overlaymode="logo">With Logo Off White</button>
+          <button class="artboard-mode-btn btn-pill" data-overlaymode="mark">With Logomark Off White</button>
+          <button class="artboard-mode-btn btn-pill" data-overlaymode="none">Pure Texture Only</button>
+        </div>
+
+        <div style="font-size:0.8125rem;color:var(--text-secondary);background:var(--bg-secondary);padding:0.4rem 0.85rem;border-radius:var(--radius-pill);border:1px solid var(--border-color);">
+          Click any artboard to view full resolution (1440×1080)
+        </div>
+      </div>
+
+      <!-- 12 Responsive Artboard Cards Grid -->
+      <div id="artboards-1-12-grid" class="artboard-grid">
+        <!-- Injected via app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 Photography Direction -->
+  <section id="photography" class="guideline-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-number">07 Photography Direction</div>
+        <h2 class="section-title">“Images are lit, not just taken.”</h2>
+        <p class="section-subtitle">
+          One warm orange light source against deep Charcoal shadow, so Orange reads as the light and Charcoal as the space.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="gallery-filter-tabs">
+        <button class="gallery-filter-tab btn-pill active" data-filter="all">All Styles</button>
+        <button class="gallery-filter-tab btn-pill" data-filter="objects">1. Objects &amp; Form</button>
+        <button class="gallery-filter-tab btn-pill" data-filter="light">2. Light as Pattern</button>
+        <button class="gallery-filter-tab btn-pill" data-filter="silhouette">3. Silhouette &amp; Rim Light</button>
+        <button class="gallery-filter-tab btn-pill" data-filter="monochrome">4. Monochrome Counterpoint</button>
+      </div>
+
+      <!-- Photo Grid -->
+      <div class="photo-grid" id="photo-gallery-grid">
+        <!-- Objects & Form -->
+        <div class="photo-card cut-corner" data-category="objects">
+          <img src="assets/photography/artboard_1.png" alt="Objects & Form" loading="lazy">
+          <div class="photo-overlay">
+            <div class="photo-category-tag">Objects &amp; Form</div>
+            <div class="photo-caption">Sculptural objects glow against dark, matte surfaces. One hero object per frame.</div>
+          </div>
+        </div>
+
+        <div class="photo-card cut-corner" data-category="objects">
+          <img src="assets/photography/artboard_2.png" alt="Tactile Product" loading="lazy">
+          <div class="photo-overlay">
+            <div class="photo-category-tag">Objects &amp; Form</div>
+            <div class="photo-caption">Directional orange key light cutting across textured geometric forms.</div>
+          </div>
+        </div>
+
+        <div class="photo-card cut-corner" data-category="objects">
+          <img src="assets/photography/artboard_3.png" alt="Raw Materials" loading="lazy">
+          <div class="photo-overlay">
+            <div class="photo-category-tag">Objects &amp; Form</div>
+            <div class="photo-caption">Physical craft and precision manufacturing under concentrated forge illumination.</div>
+          </div>
+        </div>
+
+        <!-- Light as Pattern -->
+        <div class="photo-card cut-corner" data-category="light">
+          <img src="assets/photography/ldo_1.png" alt="Light as Pattern" loading="lazy">
+          <div class="photo-overlay">
+            <div class="photo-category-tag">Light as Pattern</div>
+            <div class="photo-caption">Projected geometric light wraps faces and bodies, making the image architectural.</div>
+          </div>
+        </div>
+
+        <div class="photo-card cut-corner" data-category="light">
+          <img src="assets/photography/ldo_2.png" alt="Projected Lines" loading="lazy">
+          <div class="photo-overlay">
+            <div class="photo-category-tag">Light as Pattern</div>
+            <div class="photo-caption">Optical lines echoing brand grid geometry across human subjects.</div>
+          </div>
+        </div>
+
+        <div class="photo-card cut-corner" data-category="light">
+          <img src="assets/photography/ldo_3.png" alt="Light Grids" loading="lazy">
+          <div class="photo-overlay">
+            <div class="photo-category-tag">Light as Pattern</div>
+            <div class="photo-caption">Dramatic projection without sacrificing authentic human expression.</div>
+          </div>
+        </div>
+
+        <!-- Silhouette & Rim Light -->
+        <div class="photo-card cut-corner" data-category="silhouette">
+          <img src="assets/photography/artboard_4.png" alt="Silhouette & Rim Light" loading="lazy">
+          <div class="photo-overlay">
+            <div class="photo-category-tag">Silhouette &amp; Rim Light</div>
+            <div class="photo-caption">Figures sharply delineated against warm gradients with generous negative space.</div>
+          </div>
+        </div>
+
+        <div class="photo-card cut-corner" data-category="silhouette">
+          <img src="assets/photography/artboard_5.png" alt="Edge Lighting" loading="lazy">
+          <div class="photo-overlay">
+            <div class="photo-category-tag">Silhouette &amp; Rim Light</div>
+            <div class="photo-caption">High-contrast rim contours establishing theatrical depth.</div>
+          </div>
+        </div>
+
+        <!-- Monochrome Counterpoint -->
+        <div class="photo-card cut-corner" data-category="monochrome">
+          <img src="assets/photography/bw_1.png" alt="Monochrome Counterpoint" loading="lazy">
+          <div class="photo-overlay">
+            <div class="photo-category-tag">Monochrome Counterpoint</div>
+            <div class="photo-caption">Editorial high-contrast black and white when orange lighting is absent.</div>
+          </div>
+        </div>
+
+        <div class="photo-card cut-corner" data-category="monochrome">
+          <img src="assets/photography/bw_2.png" alt="High Contrast B&W" loading="lazy">
+          <div class="photo-overlay">
+            <div class="photo-category-tag">Monochrome Counterpoint</div>
+            <div class="photo-caption">Deep velvety blacks and punchy specular highlights with zero flat grey haze.</div>
+          </div>
+        </div>
+
+        <div class="photo-card cut-corner" data-category="monochrome">
+          <img src="assets/photography/bw_4.png" alt="Editorial Portrait" loading="lazy">
+          <div class="photo-overlay">
+            <div class="photo-category-tag">Monochrome Counterpoint</div>
+            <div class="photo-caption">Confident, unposed subjects framed by clean typographic negative space.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Always vs Never Rules Checklist -->
+      <div class="grid-2" style="margin-top:3rem;">
+        <div class="brand-card" style="border-left:4px solid #2ECC71;">
+          <h4 style="font-size:1.15rem;font-weight:700;color:#2ECC71;margin-bottom:1rem;display:flex;align-items:center;gap:0.5rem;">
+            ✓ ALWAYS REQUIRE
+          </h4>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:0.6rem;font-size:0.9375rem;color:var(--text-secondary);">
+            <li>• Warm orange key light and deep matte Charcoal shadow</li>
+            <li>• One clear subject per photographic frame</li>
+            <li>• Confident, unposed, natural humans in focus</li>
+            <li>• Generous negative space preserved for bold typography</li>
+          </ul>
+        </div>
+
+        <div class="brand-card" style="border-left:4px solid #E74C3C;">
+          <h4 style="font-size:1.15rem;font-weight:700;color:#E74C3C;margin-bottom:1rem;display:flex;align-items:center;gap:0.5rem;">
+            ✕ NEVER ALLOW
+          </h4>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:0.6rem;font-size:0.9375rem;color:var(--text-secondary);">
+            <li>• Flat, evenly lit, generic stock photography</li>
+            <li>• Cool blue/green tints or competing neon hues</li>
+            <li>• Fake over-enthusiastic corporate smiles</li>
+            <li>• Heavy digital softening filters over faces</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08 Brand Voice & Tone -->
+  <section id="brand-voice" class="guideline-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-number">08 Brand Voice</div>
+        <h2 class="section-title">The Sharp Creative Partner</h2>
+        <p class="section-subtitle">
+          Direct without being harsh, opinionated without being arrogant. Talks like a sharp creative partner, not a corporate vendor.
+        </p>
+      </div>
+
+      <div class="grid-3" style="margin-bottom:3rem;">
+        <div class="brand-card">
+          <div class="card-label">Writing Principle 01</div>
+          <h4 class="card-title">Lead with a bold claim</h4>
+          <p class="card-text">
+            Open with a decisive assertion, then back it up with rigorous reasoning. Never hedge or bury the headline.
+          </p>
+        </div>
+
+        <div class="brand-card">
+          <div class="card-label">Writing Principle 02</div>
+          <h4 class="card-title">Punchy cadence &amp; rhythm</h4>
+          <p class="card-text">
+            Favour short, punchy sentences mixed with an occasional longer one for natural breathing rhythm.
+          </p>
+        </div>
+
+        <div class="brand-card">
+          <div class="card-label">Writing Principle 03</div>
+          <h4 class="card-title">Active verbs only</h4>
+          <p class="card-text">
+            Use strong, muscular verbs — forge, build, sharpen, shape, ship. Eliminate passive voice and corporate mush.
+          </p>
+        </div>
+      </div>
+
+      <!-- Vocabulary Matrix -->
+      <div class="brand-card cut-corner" style="margin-bottom:3rem;">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;margin-bottom:1.5rem;">
+          <div>
+            <div class="card-label">Vocabulary Architecture</div>
+            <h3 style="font-size:1.4rem;font-weight:800;">Words to Use vs Words to Cut</h3>
+          </div>
+          <input type="text" id="vocab-search" placeholder="Filter words..." style="padding:0.4rem 0.85rem;background:var(--bg-secondary);border:1px solid var(--border-color);color:var(--text-primary);border-radius:var(--radius-sm);outline:none;font-size:0.8125rem;">
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:0.75rem;">
+          <div class="vocab-row" style="display:flex;justify-content:space-between;align-items:center;padding:0.75rem 1rem;background:var(--bg-secondary);border-radius:4px;">
+            <div style="color:var(--color-orange);font-weight:700;">✓ Forge, build, ship, sharpen, cut, solid, momentum</div>
+            <div style="color:var(--text-muted);font-size:0.8125rem;">Muscular, industrial, action-first</div>
+          </div>
+          <div class="vocab-row" style="display:flex;justify-content:space-between;align-items:center;padding:0.75rem 1rem;background:rgba(231,76,60,0.08);border-radius:4px;">
+            <div style="color:#E74C3C;font-weight:700;">✕ Bespoke, holistic, 360-degree, synergy, disruptive, ninja</div>
+            <div style="color:var(--text-muted);font-size:0.8125rem;">Meaningless agency fluff — ban entirely</div>
+          </div>
+          <div class="vocab-row" style="display:flex;justify-content:space-between;align-items:center;padding:0.75rem 1rem;background:var(--bg-secondary);border-radius:4px;">
+            <div style="color:var(--color-orange);font-weight:700;">✓ “Let’s form your future” (Standard Sign-Off Line)</div>
+            <div style="color:var(--text-muted);font-size:0.8125rem;">Official Decision 4 campaign and exterior sign standard</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 09 Brand Applications Showcase -->
+  <section id="applications" class="guideline-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-number">09 Applications</div>
+        <h2 class="section-title">Environmental &amp; Physical Mockups</h2>
+        <p class="section-subtitle">
+          Real-world execution across out-of-home posters, building façades, corporate identity, and physical packaging.
+        </p>
+      </div>
+
+      <div class="grid-2" style="margin-bottom:2.5rem;">
+        <!-- Transit Poster -->
+        <div class="brand-card cut-corner" style="padding:1.5rem;cursor:pointer;" onclick="openLightbox('assets/mockups/citylight_.png', 'Transit Poster — Charcoal field, Sora ExtraBold headline with Warm Orange emphasis word, and fluted 3D form.')">
+          <img src="assets/mockups/citylight_.png" alt="Citylight Poster Mockup" style="width:100%;height:380px;object-fit:cover;border-radius:4px;margin-bottom:1.25rem;">
+          <div class="card-label">Out-of-Home</div>
+          <h4 style="font-size:1.25rem;font-weight:800;margin-bottom:0.35rem;">Transit Citylight Poster</h4>
+          <p class="card-text">
+            Charcoal field, Sora ExtraBold headline with one Warm Orange emphasis word, a fluted-orange 3D form as the hero, logomark top-left, CTA bottom-right.
+          </p>
+        </div>
+
+        <!-- Façade Sign -->
+        <div class="brand-card cut-corner" style="padding:1.5rem;cursor:pointer;" onclick="openLightbox('assets/mockups/horizontal_sign_.png', 'Façade Banner — Orange fluted-gradient field, Off White uppercase Sora ExtraBold headline.')">
+          <img src="assets/mockups/horizontal_sign_.png" alt="Horizontal Sign Mockup" style="width:100%;height:380px;object-fit:cover;border-radius:4px;margin-bottom:1.25rem;">
+          <div class="card-label">Architectural</div>
+          <h4 style="font-size:1.25rem;font-weight:800;margin-bottom:0.35rem;">Façade Building Banner</h4>
+          <p class="card-text">
+            Orange fluted-gradient field, Off White uppercase Sora ExtraBold headline, lockup top-left, year top-right. Display contrast calibrated at 2.6:1.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid-3">
+        <!-- Projecting Sign -->
+        <div class="brand-card" style="padding:1.5rem;cursor:pointer;" onclick="openLightbox('assets/mockups/ms_sign.jpg', 'Projecting Sign — Off White face, stacked wordmark, and standardized sign-off line.')">
+          <img src="assets/mockups/ms_sign.jpg" alt="Projecting Sign Mockup" style="width:100%;height:240px;object-fit:cover;border-radius:4px;margin-bottom:1rem;">
+          <div class="card-label">Exterior</div>
+          <h5 style="font-size:1.1rem;font-weight:700;">Projecting Box Sign</h5>
+          <p class="card-text" style="font-size:0.85rem;">Off White face, stacked wordmark, and standardized sign-off line "Let's form your future".</p>
+        </div>
+
+        <!-- ID Card -->
+        <div class="brand-card" style="padding:1.5rem;cursor:pointer;" onclick="openLightbox('assets/mockups/id_card.jpg', 'ID Badge & Lanyard — Charcoal card, Orange logo on Charcoal, zigzag pattern.')">
+          <img src="assets/mockups/id_card.jpg" alt="ID Badge Mockup" style="width:100%;height:240px;object-fit:cover;border-radius:4px;margin-bottom:1rem;">
+          <div class="card-label">Collateral</div>
+          <h5 style="font-size:1.1rem;font-weight:700;">ID Badge &amp; Lanyard</h5>
+          <p class="card-text" style="font-size:0.85rem;">Charcoal card with Warm Orange logo lockup and custom woven orange lanyard.</p>
+        </div>
+
+        <!-- Wax Seal -->
+        <div class="brand-card" style="padding:1.5rem;cursor:pointer;" onclick="openLightbox('assets/mockups/wax_seal_stamp_psd_.png', 'Wax Seal Stamp — The raw block mark pressed in terracotta sealing wax.')">
+          <img src="assets/mockups/wax_seal_stamp_psd_.png" alt="Wax Seal Mockup" style="width:100%;height:240px;object-fit:cover;border-radius:4px;margin-bottom:1rem;">
+          <div class="card-label">Craft Touchpoint</div>
+          <h5 style="font-size:1.1rem;font-weight:700;">Wax Seal Heritage Stamp</h5>
+          <p class="card-text" style="font-size:0.85rem;">Precision debossed modular block mark pressed into tactile sealing wax.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 The Illustrator Rebuild & Decisions -->
+  <section id="rebuild-decisions" class="guideline-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-number">10 Decisions</div>
+        <h2 class="section-title">The Illustrator Rebuild &amp; Design Decisions</h2>
+        <p class="section-subtitle">
+          Based on the 21 October 2026 master review by Lyko Artistry, resolving copy/visual disagreements, contrast compliance, and system governance.
+        </p>
+      </div>
+
+      <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:2rem;">
+        <button class="decision-tab-btn btn-pill active">Decision 1: Container Corners</button>
+        <button class="decision-tab-btn btn-pill">Decision 2: Orange Text Contrast</button>
+        <button class="decision-tab-btn btn-pill">Decision 3: Sections 10–12 Scope</button>
+        <button class="decision-tab-btn btn-pill">Decision 4: Standard Sign-Off</button>
+        <button class="decision-tab-btn btn-pill">Decision 5: The Ampersand</button>
+        <button class="decision-tab-btn btn-pill">Decision 6: Minimum Size Rules</button>
+      </div>
+
+      <div id="decision-detail-container">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 11 Master 42-Page Guideline Slide Inspector -->
+  <section id="guideline-inspector" class="guideline-section" style="background-color:rgba(0,0,0,0.2);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-number">11 PDF Slide Inspector</div>
+        <h2 class="section-title">The Complete 42-Page Master Guideline</h2>
+        <p class="section-subtitle">
+          Inspect all 42 high-definition rendered pages from the original PDF side-by-side with Illustrator Rebuild corrected copy notes.
+        </p>
+      </div>
+
+      <div class="slide-inspector">
+        <div class="inspector-header">
+          <div style="display:flex;align-items:center;gap:1rem;">
+            <button id="slide-prev-btn" class="btn-secondary" style="padding:0.4rem 0.85rem;">← Prev</button>
+            <select id="slide-page-select" style="padding:0.45rem 0.85rem;background:var(--bg-card);color:var(--text-primary);border:1px solid var(--border-color);border-radius:4px;font-family:inherit;font-weight:600;">
+              <!-- Dynamic page options -->
+            </select>
+            <button id="slide-next-btn" class="btn-secondary" style="padding:0.4rem 0.85rem;">Next →</button>
+          </div>
+
+          <div style="font-size:0.8125rem;color:var(--text-secondary);">
+            Tip: Click the image to view in full-screen zoom
+          </div>
+        </div>
+
+        <div class="inspector-main-viewer">
+          <div class="inspector-image-wrapper">
+            <img id="slide-main-img" src="assets/pdf_pages/page_01.png" alt="Guideline Slide Page">
+          </div>
+
+          <div class="inspector-notes-panel">
+            <div id="slide-page-num" class="inspector-page-pill">Page 1 of 42</div>
+            <h3 id="slide-title" style="font-size:1.6rem;font-weight:800;margin-bottom:0.75rem;">Cover</h3>
+            
+            <div id="slide-change-note" class="inspector-change-note">
+              <!-- Rebuild note -->
+            </div>
+
+            <div id="slide-content-blocks">
+              <!-- Rebuild content blocks -->
+            </div>
+          </div>
+        </div>
+
+        <!-- 42 Thumbnail Scroller Rail -->
+        <div id="thumbnail-scroller" class="thumbnail-scroller">
+          <!-- 42 thumbnails injected here -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12 Asset Station & Downloads Hub -->
+  <section id="assets-hub" class="guideline-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-number">12 Asset Station</div>
+        <h2 class="section-title">Official Vector Assets &amp; Master Packages</h2>
+        <p class="section-subtitle">
+          Direct downloads of authentic vector SVGs, master print PDFs, Artboards 1–12, and developer design tokens.
+        </p>
+      </div>
+
+      <!-- Master ZIP Banner -->
+      <div class="brand-card cut-corner" style="padding:2.5rem;background:linear-gradient(135deg, #2A2421 0%, #1C1B1A 100%);margin-bottom:3rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.5rem;">
+        <div>
+          <div class="card-label">Complete Production Package</div>
+          <h3 style="font-size:1.8rem;font-weight:800;color:#F7F5F0;margin-bottom:0.5rem;">Form &amp; Foundry Master Brand Kit (.ZIP)</h3>
+          <p style="color:#B5B2AC;max-width:640px;">
+            Updated bundle containing all official vector SVGs, 9 master vector print PDFs, Artboards 1–12, Brand Icons sheet, templates, and color palette tokens.
+          </p>
+        </div>
+        <a href="assets/brand/Form_and_Foundry_Assets_Master.zip" download class="btn-primary" style="padding:0.75rem 1.75rem;font-size:0.95rem;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>Download Master Kit (6.0 MB)</span>
+        </a>
+      </div>
+
+      <!-- Official SVGs Grid -->
+      <h3 style="font-size:1.35rem;font-weight:800;margin-bottom:1.25rem;">Official Vector SVGs</h3>
+      <div class="grid-3" style="margin-bottom:3rem;">
+        <div class="brand-card">
+          <div class="card-label">Official SVG</div>
+          <h4 class="card-title">Logo Charcoal.svg</h4>
+          <p class="card-text" style="margin-bottom:1rem;">Master stacked logo vector for bright and white backgrounds.</p>
+          <a href="assets/brand/official_svgs/Logo Charcoal.svg" download class="btn-secondary" style="padding:0.4rem 0.85rem;font-size:0.8rem;">Download SVG</a>
+        </div>
+        <div class="brand-card">
+          <div class="card-label">Official SVG</div>
+          <h4 class="card-title">Logo Off white.svg</h4>
+          <p class="card-text" style="margin-bottom:1rem;">Master stacked logo vector for dark and black backgrounds.</p>
+          <a href="assets/brand/official_svgs/Logo Off white.svg" download class="btn-secondary" style="padding:0.4rem 0.85rem;font-size:0.8rem;">Download SVG</a>
+        </div>
+        <div class="brand-card">
+          <div class="card-label">Official SVG</div>
+          <h4 class="card-title">Sec Logo Charcoal.svg</h4>
+          <p class="card-text" style="margin-bottom:1rem;">Master horizontal logo vector for headers on bright backgrounds.</p>
+          <a href="assets/brand/official_svgs/Sec Logo Charcoal.svg" download class="btn-secondary" style="padding:0.4rem 0.85rem;font-size:0.8rem;">Download SVG</a>
+        </div>
+        <div class="brand-card">
+          <div class="card-label">Official SVG</div>
+          <h4 class="card-title">Sec Logo Off white.svg</h4>
+          <p class="card-text" style="margin-bottom:1rem;">Master horizontal logo vector for headers on dark backgrounds.</p>
+          <a href="assets/brand/official_svgs/Sec Logo Off white.svg" download class="btn-secondary" style="padding:0.4rem 0.85rem;font-size:0.8rem;">Download SVG</a>
+        </div>
+        <div class="brand-card">
+          <div class="card-label">Official SVG</div>
+          <h4 class="card-title">Logomark Charcoal.svg</h4>
+          <p class="card-text" style="margin-bottom:1rem;">Standalone forged raw block mark for bright grounds.</p>
+          <a href="assets/brand/official_svgs/Logomark Charcoal.svg" download class="btn-secondary" style="padding:0.4rem 0.85rem;font-size:0.8rem;">Download SVG</a>
+        </div>
+        <div class="brand-card">
+          <div class="card-label">Official SVG</div>
+          <h4 class="card-title">Logomark Off white.svg</h4>
+          <p class="card-text" style="margin-bottom:1rem;">Standalone forged raw block mark for dark grounds.</p>
+          <a href="assets/brand/official_svgs/Logomark Off white.svg" download class="btn-secondary" style="padding:0.4rem 0.85rem;font-size:0.8rem;">Download SVG</a>
+        </div>
+      </div>
+
+      <!-- Individual Master PDFs -->
+      <h3 style="font-size:1.35rem;font-weight:800;margin-bottom:1.25rem;">Master Vector PDFs from Assets Folder</h3>
+      <div class="grid-3" style="margin-bottom:3rem;">
+        <div class="brand-card">
+          <div class="card-label">Vector PDF</div>
+          <h4 class="card-title">Logo Charcoal.pdf</h4>
+          <p class="card-text" style="margin-bottom:1rem;">Master stacked logo vector artwork on Charcoal.</p>
+          <a href="assets/brand/pdfs/Logo Charcoal.pdf" download class="btn-secondary" style="padding:0.4rem 0.85rem;font-size:0.8rem;">Download PDF</a>
+        </div>
+        <div class="brand-card">
+          <div class="card-label">Vector PDF</div>
+          <h4 class="card-title">Logo Off white.pdf</h4>
+          <p class="card-text" style="margin-bottom:1rem;">Master stacked logo vector artwork on Off White.</p>
+          <a href="assets/brand/pdfs/Logo Off white.pdf" download class="btn-secondary" style="padding:0.4rem 0.85rem;font-size:0.8rem;">Download PDF</a>
+        </div>
+        <div class="brand-card">
+          <div class="card-label">Vector PDF</div>
+          <h4 class="card-title">Logo Orange.pdf</h4>
+          <p class="card-text" style="margin-bottom:1rem;">Master stacked logo vector artwork on Warm Orange.</p>
+          <a href="assets/brand/pdfs/Logo Orange.pdf" download class="btn-secondary" style="padding:0.4rem 0.85rem;font-size:0.8rem;">Download PDF</a>
+        </div>
+        <div class="brand-card">
+          <div class="card-label">Vector PDF</div>
+          <h4 class="card-title">Sec Logo Charcoal.pdf</h4>
+          <p class="card-text" style="margin-bottom:1rem;">Master horizontal logo lockup on Charcoal.</p>
+          <a href="assets/brand/pdfs/Sec Logo Charcoal.pdf" download class="btn-secondary" style="padding:0.4rem 0.85rem;font-size:0.8rem;">Download PDF</a>
+        </div>
+        <div class="brand-card">
+          <div class="card-label">Vector PDF</div>
+          <h4 class="card-title">Sec Logo Off white.pdf</h4>
+          <p class="card-text" style="margin-bottom:1rem;">Master horizontal logo lockup on Off White.</p>
+          <a href="assets/brand/pdfs/Sec Logo Off white.pdf" download class="btn-secondary" style="padding:0.4rem 0.85rem;font-size:0.8rem;">Download PDF</a>
+        </div>
+        <div class="brand-card">
+          <div class="card-label">Vector PDF</div>
+          <h4 class="card-title">Logomark Charcoal.pdf</h4>
+          <p class="card-text" style="margin-bottom:1rem;">Standalone raw modular block mark glyph.</p>
+          <a href="assets/brand/pdfs/Logomark Charcoal.pdf" download class="btn-secondary" style="padding:0.4rem 0.85rem;font-size:0.8rem;">Download PDF</a>
+        </div>
+      </div>
+
+      <!-- Developer Palette Export -->
+      <div class="brand-card cut-corner">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;margin-bottom:1.5rem;">
+          <div>
+            <div class="card-label">Developer Tokens</div>
+            <h4 class="card-title">Code Formats &amp; Integration</h4>
+          </div>
+          <div style="display:flex;gap:0.5rem;">
+            <button class="btn-secondary" onclick="copyText(':root {\n  --ff-charcoal: #1C1B1A;\n  --ff-orange: #FF6B35;\n  --ff-offwhite: #F7F5F0;\n  --ff-shade1: #D25B30;\n  --ff-shade2: #A44B2A;\n}', 'CSS Variables Copied')">Copy CSS</button>
+            <a href="assets/brand/palette.json" download class="btn-secondary">Download JSON</a>
+            <a href="assets/brand/palette.csv" download class="btn-secondary">Download CSV</a>
+          </div>
+        </div>
+        <pre style="background:var(--bg-primary);padding:1.25rem;border-radius:4px;overflow-x:auto;font-family:monospace;font-size:0.8125rem;color:var(--text-secondary);border:1px solid var(--border-color);"><code>{
+  "Charcoal": { "hex": "#1C1B1A", "rgb": [28, 27, 26], "cmyk": [70, 65, 64, 75], "pantone": "Black 7 C" },
+  "Warm Orange": { "hex": "#FF6B35", "rgb": [255, 107, 53], "cmyk": [0, 71, 85, 0], "pantone": "1655 C" },
+  "Off White": { "hex": "#F7F5F0", "rgb": [247, 245, 240], "cmyk": [2, 2, 4, 0], "pantone": "Warm Gray 1 C" }
+}</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <!-- Dynamic Official Logo in Footer -->
+          <div id="footer-official-logo" style="max-width:240px;height:auto;margin-bottom:1.25rem;">
+            <!-- Dynamically populated with official Sec Logo Off White on dark / Sec Logo Charcoal on light -->
+          </div>
+          <p style="font-size:0.9375rem;color:var(--text-secondary);max-width:320px;line-height:1.6;margin-bottom:1.5rem;">
+            Brand Strategy &amp; Growth Consultancy. We forge brands with clarity to be understood in seconds, and craft to be remembered for years.
+          </p>
+          <div style="font-size:0.8125rem;color:var(--text-muted);">
+            Sign-Off Line: “Let’s form your future”
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Sections</h5>
+          <ul>
+            <li><a href="#intro">01 Brand Introduction</a></li>
+            <li><a href="#strategy">02 Brand Strategy</a></li>
+            <li><a href="#logo-system">03 Logo System</a></li>
+            <li><a href="#colour-system">04 Colour System</a></li>
+            <li><a href="#typography">05 Typography</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>System</h5>
+          <ul>
+            <li><a href="#graphic-language">06 Graphic Language</a></li>
+            <li><a href="#glossy-artboards">06B Glossy Artboards</a></li>
+            <li><a href="#photography">07 Photography</a></li>
+            <li><a href="#brand-voice">08 Brand Voice</a></li>
+            <li><a href="#applications">09 Brand Applications</a></li>
+            <li><a href="#rebuild-decisions">10 Rebuild Decisions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Deliverables</h5>
+          <ul>
+            <li><a href="#guideline-inspector">42-Page Guideline Viewer</a></li>
+            <li><a href="#assets-hub">Download Vector Kit (.ZIP)</a></li>
+            <li><a href="assets/brand/pdfs/Form & Foundry Brand Guideline.pdf" download>Master Guideline PDF</a></li>
+            <li><a href="#colour-system">Accessibility &amp; WCAG</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          Form &amp; Foundry Master Brand Guidelines · Version 1.0 (Illustrator Rebuild Edition)
+        </div>
+        <div>
+          Prepared by Lyko Artistry · October 2026
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Command Palette / Search Modal -->
+  <div id="search-modal" class="search-modal-backdrop">
+    <div class="search-modal">
+      <div class="search-input-wrapper">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--color-orange);"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" id="search-field" class="search-field" placeholder="Search guidelines, rules, hex colors, or jump to page (1–42)..." autocomplete="off">
+        <span style="font-size:0.75rem;color:var(--text-muted);font-weight:600;">ESC</span>
+      </div>
+      <ul id="search-results" class="search-results-list">
+        <!-- Search results injected here -->
+      </ul>
+    </div>
+  </div>
+
+  <!-- Image Lightbox Modal -->
+  <div id="lightbox" class="lightbox-backdrop">
+    <div class="lightbox-content">
+      <button id="lightbox-close-btn" class="lightbox-close-btn" title="Close (ESC)">✕</button>
+      <img id="lightbox-img" src="" alt="Enlarged view">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast-notification"></div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/official_logos.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="420" viewBox="0 0 1400 420">
+<rect width="1400" height="420" fill="#FF6B35"/>
+<g transform="translate(80 40) scale(.78)">
+<rect x="64" y="64" width="384" height="384" fill="#1C1B1A"/>
+<path d="M64 64H448L64 448Z" fill="#1C1B1A"/>
+</g>
+<g fill="#1C1B1A" font-family="Sora, Arial, sans-serif" font-weight="700">
+<text x="470" y="190" font-size="112">FORM &amp;</text>
+<text x="470" y="310" font-size="112">FOUNDRY</text>
+</g>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900">
+<rect width="900" height="900" fill="#1C1B1A"/>
+<g transform="translate(340 105) scale(.43)">
+<rect x="64" y="64" width="384" height="384" fill="#F7F5F0"/>
+<path d="M64 64H448L64 448Z" fill="#FF6B35"/>
+</g>
+<g fill="#F7F5F0" font-family="Sora, Arial, sans-serif" font-weight="700" text-anchor="middle">
+<text x="450" y="430" font-size="90">FORM &amp;</text>
+<text x="450" y="530" font-size="90">FOUNDRY</text>
+</g>
+<text x="450" y="590" fill="#F7F5F0" opacity=".82" font-family="Inter, Arial, sans-serif" font-size="25" text-anchor="middle">BRAND STRATEGY &amp; GROWTH CONSULTANCY</text>
+</svg>
