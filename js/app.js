@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const headerMarkContainer = document.getElementById('header-official-mark');
   const footerLogoContainer = document.getElementById('footer-official-logo');
   const heroCardMarkContainer = document.getElementById('hero-card-official-mark');
+  const drawerMarkContainer = document.getElementById('drawer-official-mark');
 
   // --- 1. Theme Management (Strict Contrast Compliance) ---
   // Charcoal on bright/white grounds, Off-white on dark/black grounds
@@ -63,6 +64,9 @@ document.addEventListener('DOMContentLoaded', () => {
       if (headerMarkContainer) {
         headerMarkContainer.innerHTML = OFFICIAL['Logomark Charcoal.svg'];
       }
+      if (drawerMarkContainer) {
+        drawerMarkContainer.innerHTML = OFFICIAL['Logomark Charcoal.svg'];
+      }
       if (footerLogoContainer) {
         footerLogoContainer.innerHTML = OFFICIAL['Sec Logo Charcoal.svg'];
       }
@@ -76,6 +80,9 @@ document.addEventListener('DOMContentLoaded', () => {
       // On dark/black background: Use LOGO OFF-WHITE
       if (headerMarkContainer) {
         headerMarkContainer.innerHTML = OFFICIAL['Logomark Off white.svg'];
+      }
+      if (drawerMarkContainer) {
+        drawerMarkContainer.innerHTML = OFFICIAL['Logomark Off white.svg'];
       }
       if (footerLogoContainer) {
         footerLogoContainer.innerHTML = OFFICIAL['Sec Logo Off white.svg'];
@@ -859,5 +866,119 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  console.log('Form & Foundry Master Brand Portal Initialized with Official Vector Logos and Glossy Artboards 1-12.');
+  // --- 18. Mobile Navigation Drawer & Touch Optimizations ---
+  const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+  const mobileNavDrawer = document.getElementById('mobile-nav-drawer');
+  const drawerCloseBtn = document.getElementById('drawer-close-btn');
+  const drawerBackdrop = document.getElementById('drawer-backdrop');
+  const drawerLinks = document.querySelectorAll('.drawer-link');
+  const subnavPills = document.querySelectorAll('.subnav-pill');
+
+  function openDrawer() {
+    if (mobileNavDrawer) {
+      mobileNavDrawer.classList.add('open');
+      mobileNavDrawer.setAttribute('aria-hidden', 'false');
+    }
+    if (mobileMenuToggle) {
+      mobileMenuToggle.classList.add('active');
+      mobileMenuToggle.setAttribute('aria-expanded', 'true');
+    }
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeDrawer() {
+    if (mobileNavDrawer) {
+      mobileNavDrawer.classList.remove('open');
+      mobileNavDrawer.setAttribute('aria-hidden', 'true');
+    }
+    if (mobileMenuToggle) {
+      mobileMenuToggle.classList.remove('active');
+      mobileMenuToggle.setAttribute('aria-expanded', 'false');
+    }
+    document.body.style.overflow = '';
+  }
+
+  if (mobileMenuToggle) {
+    mobileMenuToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (mobileNavDrawer && mobileNavDrawer.classList.contains('open')) {
+        closeDrawer();
+      } else {
+        openDrawer();
+      }
+    });
+  }
+
+  if (drawerCloseBtn) drawerCloseBtn.addEventListener('click', closeDrawer);
+  if (drawerBackdrop) drawerBackdrop.addEventListener('click', closeDrawer);
+  
+  drawerLinks.forEach(link => {
+    link.addEventListener('click', closeDrawer);
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mobileNavDrawer && mobileNavDrawer.classList.contains('open')) {
+      closeDrawer();
+    }
+  });
+
+  // --- 19. Mobile Horizontal Sub-Nav Rail Scrollspy ---
+  const observedSections = document.querySelectorAll('section[id]');
+  if ('IntersectionObserver' in window && observedSections.length > 0 && subnavPills.length > 0) {
+    const navObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute('id');
+          subnavPills.forEach(pill => {
+            const href = pill.getAttribute('href');
+            const isActive = (href === `#${id}`);
+            pill.classList.toggle('active', isActive);
+            if (isActive) {
+              pill.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+            }
+          });
+        }
+      });
+    }, {
+      rootMargin: '-20% 0px -70% 0px',
+      threshold: 0
+    });
+
+    observedSections.forEach(sec => navObserver.observe(sec));
+  }
+
+  // --- 20. Touch Swipe Gestures for 42-Page Slide Inspector ---
+  const inspectorViewer = document.querySelector('.inspector-image-wrapper');
+  if (inspectorViewer) {
+    let touchStartX = 0;
+    let touchStartY = 0;
+    let touchEndX = 0;
+    let touchEndY = 0;
+
+    inspectorViewer.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+      touchStartY = e.changedTouches[0].screenY;
+    }, { passive: true });
+
+    inspectorViewer.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      touchEndY = e.changedTouches[0].screenY;
+      
+      const diffX = touchEndX - touchStartX;
+      const diffY = touchEndY - touchStartY;
+      
+      // Horizontal swipe threshold: > 40px and more horizontal than vertical
+      if (Math.abs(diffX) > 40 && Math.abs(diffX) > Math.abs(diffY)) {
+        if (diffX < 0) {
+          // Swiped left -> Next page
+          selectPage(state.currentPage + 1);
+        } else {
+          // Swiped right -> Previous page
+          selectPage(state.currentPage - 1);
+        }
+      }
+    }, { passive: true });
+  }
+
+  console.log('Form & Foundry Master Brand Portal Initialized with Official Vector Logos, Glossy Artboards 1-12, and Mobile/Tablet Responsive Suite.');
 });
