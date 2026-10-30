@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="3091.83 255.29000000000002 260 260" width="260" height="260">
+  <path d="M3138.95,302.42h124.31l41.44,41.44v124.31h-165.75v-165.75Z" fill="#1c1b1a" />
+  
+  <path d="M3263.26,302.42v41.44h41.44" fill="none" stroke="#f7f5f0" stroke-miterlimit="12.8" stroke-width="4.8" />
+  
+  <circle cx="3201.11" cy="374.93" r="31.08" fill="#ff6b35" />
+  
+  <path d="M3223.9,397.72l39.36,39.36" stroke="#ff6b35" stroke-miterlimit="12.8" stroke-width="8" />
+  
+</svg>

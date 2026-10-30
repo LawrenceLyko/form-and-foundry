@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="489.09000000000003 255.29000000000002 260 260" width="260" height="260">
+  <path d="M536.21,302.42h165.75v165.75h-165.75v-165.75Z" fill="#1c1b1a" />
+  
+  <path d="M536.21,302.42h165.75l-165.75,165.75v-165.75Z" fill="#ff6b35" />
+  
+  <path d="M619.09,302.42v165.75M536.21,385.29h165.75" stroke="#f7f5f0" stroke-miterlimit="12.8" stroke-width="4.8" />
+  
+</svg>

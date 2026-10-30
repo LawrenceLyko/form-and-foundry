@@ -1336,5 +1336,67 @@ window.BRAND_DATA = {
         "Leave unnumbered image pages and number only text pages. This is what happened by accident, and it is why the numbers drifted."
       ]
     }
-  ]
+  ],
+  "icons": [
+    {"code": "FF / 01", "slug": "strategy", "name": "Strategy & Architecture", "desc": "Quartered block with precision bisecting grid representing structured business architecture.", "tags": ["strategy", "architecture", "framework", "structure"], "svg": "assets/brand_icons/icon_strategy.svg", "tile": "assets/brand_icons/tile_strategy.svg"},
+    {"code": "FF / 02", "slug": "direction", "name": "Brand Direction", "desc": "Directional chevron block with 45° diagonal cut representing unambiguous strategic guidance.", "tags": ["direction", "brand", "orientation", "arrow"], "svg": "assets/brand_icons/icon_direction.svg", "tile": "assets/brand_icons/tile_direction.svg"},
+    {"code": "FF / 03", "slug": "growth", "name": "Growth & Scaling", "desc": "Ascending stepped bar chart with arrow trajectory for high-velocity venture expansion.", "tags": ["growth", "scale", "performance", "momentum"], "svg": "assets/brand_icons/icon_growth.svg", "tile": "assets/brand_icons/tile_growth.svg"},
+    {"code": "FF / 04", "slug": "research", "name": "Insight & Research", "desc": "Document tile with search glass indicator for deep qualitative and quantitative diligence.", "tags": ["research", "insights", "discovery", "analysis"], "svg": "assets/brand_icons/icon_research.svg", "tile": "assets/brand_icons/tile_research.svg"},
+    {"code": "FF / 05", "slug": "positioning", "name": "Market Positioning", "desc": "Quartered block with alternating diagonal fills establishing distinct category presence.", "tags": ["positioning", "market", "differentiation"], "svg": "assets/brand_icons/icon_positioning.svg", "tile": "assets/brand_icons/tile_positioning.svg"},
+    {"code": "FF / 06", "slug": "forge", "name": "The Forge Process", "desc": "Interlocking triangular blocks in dynamic tension representing raw ideas shaped into brands.", "tags": ["forge", "craft", "geometry", "process"], "svg": "assets/brand_icons/icon_forge.svg", "tile": "assets/brand_icons/tile_forge.svg"},
+    {"code": "FF / 07", "slug": "digital", "name": "Digital Platform", "desc": "Screen device terminal with accent sub-block for interactive digital systems and apps.", "tags": ["digital", "screen", "web", "software", "product"], "svg": "assets/brand_icons/icon_digital.svg", "tile": "assets/brand_icons/tile_digital.svg"},
+    {"code": "FF / 08", "slug": "network", "name": "Network & Ecosystem", "desc": "Interconnected hexagonal matrix with central node for collaborative partner integration.", "tags": ["network", "ecosystem", "collaboration", "partnership"], "svg": "assets/brand_icons/icon_network.svg", "tile": "assets/brand_icons/tile_network.svg"},
+    {"code": "FF / 09", "slug": "roadmap", "name": "Strategic Roadmap", "desc": "Horizontal timeline bar with directional marker for quarterly executable milestones.", "tags": ["roadmap", "timeline", "execution", "planning"], "svg": "assets/brand_icons/icon_roadmap.svg", "tile": "assets/brand_icons/tile_roadmap.svg"},
+    {"code": "FF / 10", "slug": "analytics", "name": "Metrics & Evidence", "desc": "Triple metric column chart on solid base for decisions backed by verified data.", "tags": ["analytics", "metrics", "data", "evidence"], "svg": "assets/brand_icons/icon_analytics.svg", "tile": "assets/brand_icons/tile_analytics.svg"},
+    {"code": "FF / 11", "slug": "campaigns", "name": "Campaign Amplification", "desc": "Industrial megaphone emitter with sound wave arcs for market-reaching brand momentum.", "tags": ["campaigns", "marketing", "amplifier", "voice"], "svg": "assets/brand_icons/icon_campaigns.svg", "tile": "assets/brand_icons/tile_campaigns.svg"},
+    {"code": "FF / 12", "slug": "foundation", "name": "System Foundation", "desc": "Symmetric four-quadrant anchor matrix representing immutable design governance.", "tags": ["foundation", "system", "anchor", "governance"], "svg": "assets/brand_icons/icon_foundation.svg", "tile": "assets/brand_icons/tile_foundation.svg"}
+  ],
+  "digital_system": {
+    "interface_direction": "A bold, editorial-meets-graphic layout with confident use of large display type and high-contrast block colour sections.",
+    "buttons": [
+      {"type": "Primary", "fill": "#FF6B35 (Warm Orange)", "text": "#1C1B1A (Charcoal)", "corner": "45° clipped top-right corner", "hover": "Brightness 108%, slight 1px elevation"},
+      {"type": "Secondary", "fill": "#1C1B1A (Charcoal)", "text": "#F7F5F0 (Off White)", "corner": "45° clipped top-right corner", "hover": "Border-color #FF6B35, text color #FF6B35"},
+      {"type": "Ghost / Outline", "fill": "Transparent", "text": "Current ground text", "corner": "2px solid border, 45° clipped corner", "hover": "Background rgba(255,107,53,0.12)"}
+    ],
+    "cards": {
+      "border": "2px solid var(--border-color)",
+      "corner": "Signature 45° clipped corner on top-right (16px cut)",
+      "hover": "Fills with a 10% Warm Orange tint overlay (rgba(255,107,53,0.10)) and 1px border highlight"
+    },
+    "navigation": "Charcoal background (#1C1B1A), Off White text (#F7F5F0), with a solid Warm Orange active-state fill — bolder than traditional underlined tabs.",
+    "social_templates": {
+      "format": "Portrait 1080×1350 (4:5 aspect ratio) for maximum vertical feed real estate",
+      "layout": "Modular block grid recombining the square-and-triangle motif per post, maintaining high brand recognition across diverse topics."
+    }
+  },
+  "motion_system": {
+    "logo_animation": "The block mark's square splits along its 45° diagonal and the two halves shift into place with a quick, snappy motion (150–250ms) — like raw metal being forged or struck into shape.",
+    "transitions": "Sharp cuts and block-wipes — a solid color block sweeps across to reveal the next state — rather than soft dissolving fades. Motion has impact, weight, and rhythm.",
+    "principles": [
+      {"title": "Weight & Force", "desc": "Motion feels physical, like forged iron or hydraulic machinery. Never floaty, gelatinous, or soft."},
+      {"title": "Snappy Cadence", "desc": "150–300ms for UI actions, up to 600ms for hero brand reveals, punctuated by deliberate resting pauses."},
+      {"title": "Overshoot & Snap", "desc": "Key moments snap into place with a slight overshoot (cubic-bezier(0.34, 1.56, 0.64, 1)), settling decisively."},
+      {"title": "Text Slam-In", "desc": "Headlines and key metrics scale quickly from 95% to 100% with decisive impact, rather than a slow fade-up."}
+    ],
+    "easing": "cubic-bezier(0.2, 0.9, 0.3, 1.1)"
+  },
+  "governance": {
+    "maintenance": "The brand system is centrally maintained by the Design Lead. All external, marketing, and client-facing materials must be validated against this guideline before distribution.",
+    "modification_rights": [
+      {"role": "Design Lead", "rights": "Full Authority", "scope": "Sole authority to alter logo master geometry, palette codes, typography hierarchy, or add new graphic elements."},
+      {"role": "Marketing & Product Team", "rights": "Template Execution", "scope": "May produce marketing collateral, decks, and social posts strictly utilizing approved Figma/Illustrator templates."},
+      {"role": "External Vendors & Agencies", "rights": "Restricted Asset Usage", "scope": "May only use provided production-ready SVG/EPS assets. Zero asset modifications permitted. Deliverables subject to formal audit."}
+    ],
+    "approval_workflow": [
+      {"step": "01", "title": "Draft Collateral", "desc": "Author designs layout using authorized typography and official vector assets."},
+      {"step": "02", "title": "Design Lead Review", "desc": "Check against strict ground contrast rules, clear space, and 45° corner geometry."},
+      {"step": "03", "title": "Brand Consistency Audit", "desc": "Verify approved vocabulary, 50/35/15 color ratios, and correct logo colorways."},
+      {"step": "04", "title": "Production Release", "desc": "Deliver final assets in authorized vector (SVG/PDF) or high-res raster formats."}
+    ]
+  },
+  "voice_analyzer": {
+    "banned": ["bespoke", "holistic", "synergy", "disruptive", "best-in-class", "game-changer", "world-class", "ninja", "guru", "rockstar", "360-degree", "paradigm shift", "leverage", "cutting-edge", "ideate", "bandwidth", "unpack"],
+    "approved": ["forge", "build", "ship", "sharpen", "shape", "cut", "scale", "craft", "direct", "execute", "ground", "turn", "deliver", "anchor", "solid", "clear", "distinct", "raw", "momentum"]
+  }
+
 };

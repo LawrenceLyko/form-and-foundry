@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="489.09000000000003 1025.76 260 260" width="260" height="260">
+  <path d="M525.85,1062.52h186.47v186.47h-186.47v-186.47Z" fill="#1c1b1a" />
+  
+  <path d="M525.85,1062.52h93.23v93.23h-93.23v-93.23Z" fill="#ff6b35" />
+  
+  <path d="M619.09,1155.76l93.23-93.23v186.47h-93.23v-93.23Z" fill="#ff6b35" />
+  
+  <path d="M619.09,1062.52v186.47M525.85,1155.76h186.47" stroke="#f7f5f0" stroke-miterlimit="12.8" stroke-width="4.8" />
+  
+</svg>

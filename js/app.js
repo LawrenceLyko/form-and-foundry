@@ -980,5 +980,344 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   }
 
-  console.log('Form & Foundry Master Brand Portal Initialized with Official Vector Logos, Glossy Artboards 1-12, and Mobile/Tablet Responsive Suite.');
+
+  // --- 21. Interactive Brand Icons Library Controller ---
+  const iconsGrid = document.getElementById('icons-interactive-grid');
+  const iconSearchInput = document.getElementById('icon-search-input');
+  let currentIconGround = 'charcoal';
+
+  function renderBrandIcons(searchQuery = '', ground = currentIconGround) {
+    if (!iconsGrid || !DATA.icons) return;
+    const q = searchQuery.trim().toLowerCase();
+    const filtered = DATA.icons.filter(icon => {
+      if (!q) return true;
+      return icon.name.toLowerCase().includes(q) ||
+             icon.code.toLowerCase().includes(q) ||
+             icon.desc.toLowerCase().includes(q) ||
+             (icon.tags && icon.tags.some(t => t.toLowerCase().includes(q)));
+    });
+
+    if (filtered.length === 0) {
+      iconsGrid.innerHTML = `
+        <div style="grid-column: 1 / -1; padding: 2.5rem; text-align: center; color: var(--text-muted); background: var(--bg-secondary); border-radius: var(--radius-sm);">
+          No icons matching "${searchQuery}". Try searching "strategy", "scale", "growth", or "forge".
+        </div>
+      `;
+      return;
+    }
+
+    iconsGrid.innerHTML = filtered.map(icon => `
+      <div class="icon-card" data-slug="${icon.slug}">
+        <div class="icon-card-stage ground-${ground}" onclick="openLightbox('${icon.tile}', '${icon.code} · ${icon.name}')" title="Click to inspect in Lightbox">
+          <img src="${icon.svg}" alt="${icon.name}" style="width:72px;height:72px;">
+        </div>
+        <div class="icon-card-info">
+          <div class="icon-code-badge">${icon.code}</div>
+          <div class="icon-title">${icon.name}</div>
+          <p class="icon-desc">${icon.desc}</p>
+        </div>
+        <div class="icon-card-actions">
+          <button class="btn-icon-action btn-copy-icon-svg" data-svgpath="${icon.svg}" title="Copy SVG Markup">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+            <span>Copy SVG</span>
+          </button>
+          <a href="${icon.svg}" download="${icon.slug}.svg" class="btn-icon-action" title="Download SVG">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span>Download</span>
+          </a>
+        </div>
+      </div>
+    `).join('');
+
+    // Attach copy SVG listeners
+    iconsGrid.querySelectorAll('.btn-copy-icon-svg').forEach(btn => {
+      btn.addEventListener('click', async (e) => {
+        e.stopPropagation();
+        const svgPath = btn.getAttribute('data-svgpath');
+        try {
+          const resp = await fetch(svgPath);
+          const svgCode = await resp.text();
+          await navigator.clipboard.writeText(svgCode);
+          showToast('✓ Vector SVG copied to clipboard');
+        } catch (err) {
+          copyText(svgPath, 'Icon Path Copied');
+        }
+      });
+    });
+  }
+
+  if (iconSearchInput) {
+    iconSearchInput.addEventListener('input', (e) => {
+      renderBrandIcons(e.target.value, currentIconGround);
+    });
+  }
+
+  document.querySelectorAll('[data-iconground]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('[data-iconground]').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentIconGround = btn.getAttribute('data-iconground');
+      renderBrandIcons(iconSearchInput ? iconSearchInput.value : '', currentIconGround);
+    });
+  });
+
+  renderBrandIcons();
+
+  // --- 22. Real-Time Brand Voice Analyzer Controller ---
+  const voiceInput = document.getElementById('voice-test-input');
+  const voiceScoreNum = document.getElementById('voice-score-number');
+  const voiceScoreLbl = document.getElementById('voice-score-label');
+  const voiceMsg = document.getElementById('voice-feedback-message');
+  const voiceVerbsStat = document.getElementById('voice-stats-verbs');
+  const voiceBannedStat = document.getElementById('voice-stats-banned');
+  const voicePunctStat = document.getElementById('voice-stats-punctuation');
+  const voiceTagsList = document.getElementById('voice-tags-list');
+
+  function analyzeBrandVoice() {
+    if (!voiceInput || !DATA.voice_analyzer) return;
+    const text = voiceInput.value;
+    const lower = text.toLowerCase();
+
+    // Check banned buzzwords
+    const detectedBanned = DATA.voice_analyzer.banned.filter(w => {
+      const regex = new RegExp(`\\b${w}\\b`, 'i');
+      return regex.test(lower);
+    });
+
+    // Check approved muscular verbs
+    const detectedVerbs = DATA.voice_analyzer.approved.filter(w => {
+      const regex = new RegExp(`\\b${w}`, 'i');
+      return regex.test(lower);
+    });
+
+    // Check exclamation marks
+    const exclamations = (text.match(/!/g) || []).length;
+    const words = text.trim().split(/\s+/).filter(Boolean).length;
+
+    // Calculate score
+    let score = 90;
+    if (detectedBanned.length > 0) score -= (detectedBanned.length * 25);
+    if (detectedVerbs.length > 0) score += Math.min(detectedVerbs.length * 6, 15);
+    if (exclamations > 1) score -= (exclamations * 10);
+    if (words > 40) score -= 10; // Encourage punchiness
+    score = Math.max(15, Math.min(100, score));
+
+    // Update UI
+    if (voiceScoreNum) voiceScoreNum.textContent = `${score}%`;
+    if (voiceScoreLbl) {
+      if (score >= 85) {
+        voiceScoreLbl.textContent = 'SHARP PARTNER';
+        voiceScoreLbl.style.color = 'var(--color-orange)';
+      } else if (score >= 65) {
+        voiceScoreLbl.textContent = 'MODERATE ALIGNMENT';
+        voiceScoreLbl.style.color = '#F39C12';
+      } else {
+        voiceScoreLbl.textContent = 'CORPORATE FLUFF';
+        voiceScoreLbl.style.color = '#E74C3C';
+      }
+    }
+
+    if (voiceVerbsStat) {
+      voiceVerbsStat.innerHTML = `Action Verbs: <strong>${detectedVerbs.length > 0 ? detectedVerbs.join(', ') : 'None detected'}</strong>`;
+    }
+    if (voiceBannedStat) {
+      voiceBannedStat.innerHTML = `Banned Buzzwords: <strong>${detectedBanned.length > 0 ? detectedBanned.join(', ') : '0 detected'}</strong>`;
+      voiceBannedStat.style.color = detectedBanned.length > 0 ? '#E74C3C' : 'inherit';
+    }
+    if (voicePunctStat) {
+      voicePunctStat.innerHTML = `Punctuation: <strong>${exclamations > 1 ? 'Too many exclamation marks (!)' : 'Clean'}</strong>`;
+    }
+
+    if (voiceTagsList) {
+      const tags = [];
+      if (detectedBanned.length > 0) {
+        detectedBanned.forEach(b => {
+          tags.push(`<span class="voice-tag fail">✕ Banned: "${b}"</span>`);
+        });
+      } else {
+        tags.push(`<span class="voice-tag pass">✓ Zero corporate fluff words</span>`);
+      }
+
+      if (detectedVerbs.length > 0) {
+        detectedVerbs.forEach(v => {
+          tags.push(`<span class="voice-tag pass">✓ Muscular verb: "${v}"</span>`);
+        });
+      } else {
+        tags.push(`<span class="voice-tag fail" style="color:#F39C12;background:rgba(243,156,18,0.12);border-color:rgba(243,156,18,0.3);">! Add stronger verbs (forge, build, ship, sharpen)</span>`);
+      }
+
+      if (exclamations > 1) {
+        tags.push(`<span class="voice-tag fail">✕ Confidence doesn't shout (cut exclamation marks)</span>`);
+      } else {
+        tags.push(`<span class="voice-tag pass">✓ Composed tone</span>`);
+      }
+
+      voiceTagsList.innerHTML = tags.join('');
+    }
+
+    if (voiceMsg) {
+      if (detectedBanned.length > 0) {
+        voiceMsg.textContent = 'Corporate buzzwords detected. Replace fluffy adjectives with muscular verbs and concrete proofs.';
+        voiceMsg.style.color = '#E74C3C';
+      } else if (score >= 85) {
+        voiceMsg.textContent = 'Decisive, muscular, and grounded. Speaks like an authoritative creative collaborator.';
+        voiceMsg.style.color = 'var(--text-primary)';
+      } else {
+        voiceMsg.textContent = 'Competent baseline, but could be sharpened with stronger action verbs and shorter sentence cadences.';
+        voiceMsg.style.color = 'var(--text-secondary)';
+      }
+    }
+  }
+
+  if (voiceInput) {
+    voiceInput.addEventListener('input', analyzeBrandVoice);
+    analyzeBrandVoice();
+  }
+
+  const sampleVoice1 = document.getElementById('sample-voice-btn-1');
+  const sampleVoice2 = document.getElementById('sample-voice-btn-2');
+  if (sampleVoice1) {
+    sampleVoice1.addEventListener('click', () => {
+      voiceInput.value = "We forge brands with enough clarity to be understood in seconds, and enough craft to be remembered for years.";
+      analyzeBrandVoice();
+    });
+  }
+  if (sampleVoice2) {
+    sampleVoice2.addEventListener('click', () => {
+      voiceInput.value = "We provide a holistic, bespoke, disruptive 360-degree branding synergy for best-in-class startups!!!";
+      analyzeBrandVoice();
+    });
+  }
+
+  // --- 23. Digital System: Social Post Canvas Generator Controller ---
+  const socialInHead = document.getElementById('social-input-headline');
+  const socialInSub = document.getElementById('social-input-subhead');
+  const socialPrevHead = document.getElementById('social-preview-headline');
+  const socialPrevSub = document.getElementById('social-preview-subhead');
+  const socialStage = document.getElementById('social-preview-stage');
+
+  if (socialInHead && socialPrevHead) {
+    socialInHead.addEventListener('input', (e) => {
+      socialPrevHead.textContent = e.target.value.toUpperCase();
+    });
+  }
+  if (socialInSub && socialPrevSub) {
+    socialInSub.addEventListener('input', (e) => {
+      socialPrevSub.textContent = e.target.value;
+    });
+  }
+
+  document.querySelectorAll('[data-socialbg]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('[data-socialbg]').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const bg = btn.getAttribute('data-socialbg');
+      if (!socialStage) return;
+
+      socialStage.className = 'social-canvas-frame';
+      socialStage.style.backgroundImage = '';
+
+      if (bg === 'charcoal') {
+        socialStage.classList.add('bg-charcoal');
+      } else if (bg === 'orange') {
+        socialStage.classList.add('bg-orange');
+      } else if (bg === 'offwhite') {
+        socialStage.classList.add('bg-offwhite');
+      } else if (bg === 'artboard-1') {
+        socialStage.classList.add('bg-charcoal');
+        socialStage.style.backgroundImage = 'linear-gradient(rgba(28,27,26,0.6), rgba(28,27,26,0.85)), url(assets/backgrounds/artboard_1.png)';
+      } else if (bg === 'artboard-6') {
+        socialStage.classList.add('bg-charcoal');
+        socialStage.style.backgroundImage = 'linear-gradient(rgba(28,27,26,0.6), rgba(28,27,26,0.85)), url(assets/backgrounds/artboard_6.png)';
+      }
+    });
+  });
+
+  // --- 24. Motion Direction Controller ---
+  const triggerMotionBtn = document.getElementById('trigger-motion-btn');
+  const motionLogoBox = document.getElementById('motion-logo-box');
+  const motionStatusPill = document.getElementById('motion-status-pill');
+  let currentMotionSpeed = 220;
+
+  function runForgeStrikeAnimation() {
+    if (!motionLogoBox) return;
+    motionLogoBox.classList.add('splitting');
+    if (motionStatusPill) {
+      motionStatusPill.textContent = `⚡ Forging: 45° Strike at ${currentMotionSpeed}ms (Spring Overshoot)`;
+      motionStatusPill.style.color = '#FFF';
+      motionStatusPill.style.background = 'var(--color-orange)';
+    }
+
+    setTimeout(() => {
+      motionLogoBox.classList.remove('splitting');
+      if (motionStatusPill) {
+        motionStatusPill.textContent = '✓ Settled: Snapped to Rigid Structure';
+        motionStatusPill.style.color = 'var(--color-orange)';
+        motionStatusPill.style.background = 'rgba(255,107,53,0.12)';
+      }
+    }, currentMotionSpeed + 120);
+  }
+
+  if (triggerMotionBtn) {
+    triggerMotionBtn.addEventListener('click', runForgeStrikeAnimation);
+  }
+  if (motionLogoBox) {
+    motionLogoBox.addEventListener('click', runForgeStrikeAnimation);
+  }
+
+  document.querySelectorAll('[data-motionspeed]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('[data-motionspeed]').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentMotionSpeed = parseInt(btn.getAttribute('data-motionspeed'), 10);
+      document.documentElement.style.setProperty('--motion-speed', `${currentMotionSpeed}ms`);
+      runForgeStrikeAnimation();
+    });
+  });
+
+  // Block Wipe Sweep Controller
+  const blockWipeBtn = document.getElementById('trigger-block-wipe-btn');
+  const blockWipeCurtain = document.getElementById('block-wipe-curtain');
+  const blockWipeContent = document.getElementById('block-wipe-content');
+  let wipeStateA = true;
+
+  if (blockWipeBtn && blockWipeCurtain) {
+    blockWipeBtn.addEventListener('click', () => {
+      blockWipeCurtain.classList.remove('wipe-active');
+      void blockWipeCurtain.offsetWidth; // Force reflow
+      blockWipeCurtain.classList.add('wipe-active');
+
+      setTimeout(() => {
+        wipeStateA = !wipeStateA;
+        if (blockWipeContent) {
+          blockWipeContent.innerHTML = wipeStateA 
+            ? '<span style="color:var(--color-orange);">STATE A:</span> RAW IDEA'
+            : '<span style="color:var(--color-off-white);">STATE B:</span> FORGED BRAND';
+        }
+      }, 300);
+    });
+  }
+
+  // --- 25. Expand Search Index with New Modules ---
+  searchIndex.push(
+    { title: '10 Digital Brand System', cat: 'Section', target: '#digital-system', meta: 'ui components buttons cards navigation social generator' },
+    { title: '11 Motion Direction', cat: 'Section', target: '#motion-system', meta: 'forge strike animation snappy 45 split overshoot block wipe' },
+    { title: '12 Brand Governance', cat: 'Section', target: '#governance-system', meta: 'maintenance rights authority workflow approval checklist' },
+    { title: 'Real-Time Voice Analyzer', cat: 'Tool', target: '#brand-voice', meta: 'analyzer checker copy test headline buzzwords fluff' },
+    { title: 'Social Post Generator (1080×1350)', cat: 'Tool', target: '#digital-system', meta: 'canvas social generator instagram linkedin' },
+    { title: '45° Split-and-Snap Simulator', cat: 'Tool', target: '#motion-system', meta: 'motion strike animation simulator logo' }
+  );
+
+  if (DATA.icons) {
+    DATA.icons.forEach(icon => {
+      searchIndex.push({
+        title: `${icon.code}: ${icon.name}`,
+        cat: 'Brand Icon',
+        target: '#graphic-language',
+        meta: `${icon.desc} ${icon.tags ? icon.tags.join(' ') : ''}`
+      });
+    });
+  }
+
+    console.log('Form & Foundry Master Brand Portal Initialized with Official Vector Logos, Glossy Artboards 1-12, and Mobile/Tablet Responsive Suite.');
 });

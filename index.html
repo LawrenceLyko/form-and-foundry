@@ -42,6 +42,9 @@
           <li><a href="#photography" class="nav-link">07 Photo</a></li>
           <li><a href="#brand-voice" class="nav-link">08 Voice</a></li>
           <li><a href="#applications" class="nav-link">09 Applications</a></li>
+          <li><a href="#digital-system" class="nav-link">10 Digital</a></li>
+          <li><a href="#motion-system" class="nav-link">11 Motion</a></li>
+          <li><a href="#governance-system" class="nav-link">12 Governance</a></li>
           <li><a href="#guideline-inspector" class="nav-link" style="color:var(--color-orange);">42-Page PDF</a></li>
           <li><a href="#assets-hub" class="nav-link">Assets</a></li>
         </ul>
@@ -130,7 +133,10 @@
         <div class="drawer-section-group">
           <div class="drawer-group-title">03 · Execution &amp; Assets</div>
           <a href="#applications" class="drawer-link"><span class="drawer-num">09</span><span>Environmental Mockups</span></a>
-          <a href="#rebuild-decisions" class="drawer-link"><span class="drawer-num">10</span><span>Illustrator Rebuild Decisions</span></a>
+          <a href="#digital-system" class="drawer-link"><span class="drawer-num">10</span><span>Digital Brand System</span></a>
+          <a href="#motion-system" class="drawer-link"><span class="drawer-num">11</span><span>Motion Direction</span></a>
+          <a href="#governance-system" class="drawer-link"><span class="drawer-num">12</span><span>Brand Governance</span></a>
+          <a href="#rebuild-decisions" class="drawer-link"><span class="drawer-num">13</span><span>Illustrator Rebuild Decisions</span></a>
           <a href="#guideline-inspector" class="drawer-link drawer-highlight"><span class="drawer-num">11</span><span>📖 Master 42-Page PDF Inspector</span></a>
           <a href="#assets-hub" class="drawer-link"><span class="drawer-num">12</span><span>⬇ Official Vector Asset Station</span></a>
         </div>
@@ -979,6 +985,44 @@
           Click sheet preview above to inspect in full-resolution Lightbox
         </div>
       </div>
+
+      <!-- Interactive 12 Brand Icons Library -->
+      <div class="brand-card cut-corner" style="padding:2.5rem;margin-top:3rem;">
+        <div class="icons-interactive-header">
+          <div>
+            <div class="card-label">Official Outlined Icons System</div>
+            <h3 style="font-size:1.6rem;font-weight:800;">The 12 Master Icons (FF / 01–12)</h3>
+            <p class="card-text">
+              Solid geometric shapes built on a square grid with signature Warm Orange accents. Every icon is available in vector SVG.
+            </p>
+          </div>
+          
+          <div class="icons-filter-bar">
+            <input type="text" id="icon-search-input" placeholder="Search icons (strategy, scale, digital)..." style="padding:0.45rem 0.85rem;background:var(--bg-secondary);border:1px solid var(--border-color);color:var(--text-primary);border-radius:var(--radius-sm);outline:none;font-size:0.8125rem;min-width:220px;">
+            <div class="icon-ground-toggles">
+              <span class="val-label" style="margin-right:4px;">Ground:</span>
+              <button class="color-swatch-toggle active" data-iconground="charcoal" style="background:#1C1B1A;" title="Charcoal Ground"></button>
+              <button class="color-swatch-toggle" data-iconground="offwhite" style="background:#F7F5F0;" title="Off White Ground"></button>
+              <button class="color-swatch-toggle" data-iconground="orange" style="background:#FF6B35;" title="Warm Orange Ground"></button>
+            </div>
+          </div>
+        </div>
+
+        <div id="icons-interactive-grid" class="icons-grid">
+          <!-- Dynamically populated via app.js -->
+        </div>
+
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;padding-top:1.25rem;border-top:1px solid var(--border-color);">
+          <div style="font-size:0.8125rem;color:var(--text-muted);">
+            All icons adhere strictly to the 1.5px / solid fill geometry and 50/35/15 brand ratio.
+          </div>
+          <div style="display:flex;gap:0.75rem;">
+            <a href="assets/brand/Brand Icons.svg" download class="btn-secondary" style="padding:0.45rem 1rem;font-size:0.8125rem;">
+              Download Full 3838×2585 Sheet (.SVG)
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -1220,6 +1264,48 @@
           </div>
         </div>
       </div>
+
+      <!-- Interactive Brand Voice Analyzer & Copy Checker -->
+      <div class="voice-analyzer-card cut-corner">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;margin-bottom:1.25rem;">
+          <div>
+            <div class="card-label">Voice Compliance Tool</div>
+            <h3 style="font-size:1.5rem;font-weight:800;">Real-Time Copy &amp; Headline Analyzer</h3>
+            <p class="card-text">
+              Test draft headlines, subheads, and pitch lines against the Form &amp; Foundry brand voice rules.
+            </p>
+          </div>
+          <div style="display:flex;gap:0.5rem;">
+            <button id="sample-voice-btn-1" class="btn-pill" style="font-size:0.75rem;">Sample 1 (Valid)</button>
+            <button id="sample-voice-btn-2" class="btn-pill" style="font-size:0.75rem;">Sample 2 (Fluff)</button>
+          </div>
+        </div>
+
+        <textarea id="voice-test-input" class="voice-input-area" placeholder="Type or paste draft messaging here (e.g. 'We forge brands with enough clarity to be understood in seconds...')...">We forge brands with enough clarity to be understood in seconds, and enough craft to be remembered for years.</textarea>
+
+        <div class="voice-feedback-panel">
+          <div class="voice-score-dial">
+            <div id="voice-score-number" class="voice-score-num">95%</div>
+            <div id="voice-score-label" style="font-size:0.75rem;font-weight:700;color:var(--color-orange);margin-top:0.25rem;">SHARP PARTNER</div>
+          </div>
+
+          <div>
+            <div id="voice-feedback-message" style="font-weight:700;font-size:1rem;margin-bottom:0.5rem;color:var(--text-primary);">
+              Decisive, muscular, and grounded. Strong action verbs detected.
+            </div>
+            <div style="font-size:0.8125rem;color:var(--text-secondary);margin-bottom:0.75rem;">
+              <span id="voice-stats-verbs">Action Verbs: <strong>forge</strong></span> · 
+              <span id="voice-stats-banned">Banned Buzzwords: <strong>0 detected</strong></span> · 
+              <span id="voice-stats-punctuation">Punctuation: <strong>Clean</strong></span>
+            </div>
+            <div id="voice-tags-list" class="voice-tags-container">
+              <span class="voice-tag pass">✓ Muscular verb: "forge"</span>
+              <span class="voice-tag pass">✓ Zero corporate fluff</span>
+              <span class="voice-tag pass">✓ No exclamation mark yelling</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -1281,6 +1367,357 @@
           <p class="card-text" style="font-size:0.85rem;">Precision debossed modular block mark pressed into tactile sealing wax.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- 10 Digital Brand System -->
+  <section id="digital-system" class="guideline-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-number">10 Digital Brand System</div>
+        <h2 class="section-title">Interface Direction &amp; Digital Components</h2>
+        <p class="section-subtitle">
+          An editorial-meets-graphic layout with confident display type, signature 45° clipped corners, and tactile interactive feedback.
+        </p>
+      </div>
+
+      <!-- Principles Overview -->
+      <div class="grid-3" style="margin-bottom:3rem;">
+        <div class="brand-card cut-corner">
+          <div class="card-label">Layout Architecture</div>
+          <h4 class="card-title">Editorial Block Grid</h4>
+          <p class="card-text">
+            Strong contrasting color blocks, generous negative space, and large display headers that read like an industrial editorial publication.
+          </p>
+        </div>
+
+        <div class="brand-card cut-corner">
+          <div class="card-label">Micro-Interactions</div>
+          <h4 class="card-title">10% Orange Tint Hover</h4>
+          <p class="card-text">
+            Interactive surface cards feature a 2px Charcoal border with a signature 45° clipped corner that fills with a subtle 10% Orange tint on hover.
+          </p>
+        </div>
+
+        <div class="brand-card cut-corner">
+          <div class="card-label">Navigation Logic</div>
+          <h4 class="card-title">Block-Fill Active State</h4>
+          <p class="card-text">
+            Navigation utilizes Charcoal backgrounds with crisp Off White typography and a solid Warm Orange active-state fill — far more decisive than underlines.
+          </p>
+        </div>
+      </div>
+
+      <!-- Live Interactive UI Component Sandbox -->
+      <div class="component-box cut-corner" style="margin-bottom:3.5rem;">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;margin-bottom:2rem;">
+          <div>
+            <div class="card-label">Component Library</div>
+            <h3 style="font-size:1.5rem;font-weight:800;">Interactive UI Components</h3>
+            <p class="card-text">Hover and click buttons and cards to test authentic micro-interactions.</p>
+          </div>
+        </div>
+
+        <div class="digital-components-grid">
+          <!-- Button Showcase -->
+          <div style="display:flex;flex-direction:column;gap:1.25rem;">
+            <div class="card-label">45° Clipped Corner Buttons</div>
+            <div>
+              <button class="ff-btn ff-btn-primary">
+                <span>Start the Forge</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+              </button>
+              <div style="font-size:0.75rem;color:var(--text-muted);margin-top:0.4rem;">Primary Action — Warm Orange fill with Charcoal text</div>
+            </div>
+
+            <div>
+              <button class="ff-btn ff-btn-secondary">
+                <span>Explore Methodology</span>
+              </button>
+              <div style="font-size:0.75rem;color:var(--text-muted);margin-top:0.4rem;">Secondary Action — Charcoal with border highlight</div>
+            </div>
+
+            <div>
+              <button class="ff-btn ff-btn-ghost">
+                <span>Download Guidelines</span>
+              </button>
+              <div style="font-size:0.75rem;color:var(--text-muted);margin-top:0.4rem;">Ghost / Outline Action — Subtle tint on hover</div>
+            </div>
+          </div>
+
+          <!-- Interactive Card Showcase -->
+          <div>
+            <div class="card-label">Interactive Forged Card (Hover Me)</div>
+            <div class="ff-interactive-card">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1rem;">
+                <span class="icon-code-badge">MODULE 01</span>
+                <span style="font-size:0.75rem;color:var(--color-orange);font-weight:700;">ACTIVE HOVER</span>
+              </div>
+              <h4 style="font-family:var(--font-display);font-size:1.35rem;font-weight:800;margin-bottom:0.5rem;">Strategic Operating Model</h4>
+              <p style="font-size:0.875rem;color:var(--text-secondary);line-height:1.6;margin-bottom:1.25rem;">
+                Hover over this container to see the signature 10% Warm Orange tint overlay and border illumination in real-time.
+              </p>
+              <div style="font-size:0.8125rem;font-weight:700;color:var(--color-orange);display:flex;align-items:center;gap:0.4rem;">
+                <span>View Blueprint</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Social Post Generator (1080×1350) -->
+      <div class="social-generator-wrapper cut-corner">
+        <div>
+          <div class="card-label">Social Media Architecture</div>
+          <h3 style="font-size:1.5rem;font-weight:800;margin-bottom:0.75rem;">1080×1350 Social Post Generator</h3>
+          <p class="card-text" style="margin-bottom:1.5rem;">
+            Generate on-brand 4:5 vertical feed posts for LinkedIn and Instagram using official brand typography, lockups, and backgrounds.
+          </p>
+
+          <div style="display:flex;flex-direction:column;gap:1rem;margin-bottom:1.5rem;">
+            <div>
+              <label class="val-label">Headline Text</label>
+              <input type="text" id="social-input-headline" class="type-input-field" value="GENERIC BRANDS BLEND IN. WE BUILD ONES THAT DON'T.">
+            </div>
+
+            <div>
+              <label class="val-label">Subhead / Body</label>
+              <input type="text" id="social-input-subhead" class="type-input-field" value="Form & Foundry pairs sharp strategic positioning with distinctive design craft.">
+            </div>
+
+            <div>
+              <label class="val-label">Background Style</label>
+              <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-top:0.35rem;">
+                <button class="btn-pill active" data-socialbg="charcoal">Charcoal Matte</button>
+                <button class="btn-pill" data-socialbg="orange">Warm Orange</button>
+                <button class="btn-pill" data-socialbg="offwhite">Off White</button>
+                <button class="btn-pill" data-socialbg="artboard-1">✨ Artboard 1</button>
+                <button class="btn-pill" data-socialbg="artboard-6">✨ Artboard 6</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Canvas Preview Stage -->
+        <div>
+          <div id="social-preview-stage" class="social-canvas-frame bg-charcoal">
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <div id="social-preview-lockup" style="display:flex;align-items:center;gap:0.5rem;">
+                <img src="assets/brand/logos/logomark-orange.svg" alt="Form & Foundry" style="height:28px;">
+                <span style="font-family:var(--font-display);font-weight:800;font-size:0.875rem;letter-spacing:0.04em;">FORM &amp; FOUNDRY</span>
+              </div>
+              <span style="font-family:monospace;font-size:0.75rem;opacity:0.75;">OCT 2026</span>
+            </div>
+
+            <div style="margin:auto 0;">
+              <h2 id="social-preview-headline" class="social-canvas-headline">GENERIC BRANDS BLEND IN. WE BUILD ONES THAT DON'T.</h2>
+              <p id="social-preview-subhead" class="social-canvas-subhead">Form &amp; Foundry pairs sharp strategic positioning with distinctive design craft.</p>
+            </div>
+
+            <div style="display:flex;justify-content:space-between;align-items:center;border-top:1px solid currentColor;padding-top:1.25rem;opacity:0.85;">
+              <span style="font-size:0.8rem;font-weight:700;">WE FORGE BRANDS.</span>
+              <span style="font-size:0.8rem;font-family:monospace;">formfoundry.co</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11 Motion Direction -->
+  <section id="motion-system" class="guideline-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-number">11 Motion Direction</div>
+        <h2 class="section-title">The Forge Strike: Weight, Snap &amp; Velocity</h2>
+        <p class="section-subtitle">
+          Motion should feel like it has weight and physical force behind it — never floaty, slow, or soft. Inspired by raw metal struck into shape.
+        </p>
+      </div>
+
+      <!-- Motion Principles Grid -->
+      <div class="grid-4" style="margin-bottom:3rem;">
+        <div class="brand-card cut-corner">
+          <div class="card-label">Principle 01</div>
+          <h4 class="card-title">Weight &amp; Force</h4>
+          <p class="card-text">
+            Motion has inertia and authority. Elements accelerate with momentum and stop with decisive conviction.
+          </p>
+        </div>
+
+        <div class="brand-card cut-corner">
+          <div class="card-label">Principle 02</div>
+          <h4 class="card-title">Snappy Cadence</h4>
+          <p class="card-text">
+            150–250ms for UI actions, up to 600ms for hero reveals. Always brisk to maintain startup momentum.
+          </p>
+        </div>
+
+        <div class="brand-card cut-corner">
+          <div class="card-label">Principle 03</div>
+          <h4 class="card-title">45° Split &amp; Snap</h4>
+          <p class="card-text">
+            The modular block mark splits along its diagonal and snaps into place with a spring overshoot curve.
+          </p>
+        </div>
+
+        <div class="brand-card cut-corner">
+          <div class="card-label">Principle 04</div>
+          <h4 class="card-title">Block Wipes</h4>
+          <p class="card-text">
+            Transitions use crisp solid-color sweeps across the screen rather than gentle cross-fades.
+          </p>
+        </div>
+      </div>
+
+      <!-- Live Interactive Motion Simulator -->
+      <div class="brand-card cut-corner" style="padding:2.5rem;margin-bottom:3rem;">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;margin-bottom:2rem;">
+          <div>
+            <div class="card-label">Motion Simulator</div>
+            <h3 style="font-size:1.6rem;font-weight:800;">45° Diagonal Split-and-Snap Simulation</h3>
+            <p class="card-text">Test the authentic mechanical forging animation at varying speeds.</p>
+          </div>
+
+          <div style="display:flex;align-items:center;gap:1rem;">
+            <div class="toolbar-group">
+              <span class="toolbar-label">Speed:</span>
+              <button class="btn-pill active" data-motionspeed="220">Snappy (220ms)</button>
+              <button class="btn-pill" data-motionspeed="150">Ultra (150ms)</button>
+              <button class="btn-pill" data-motionspeed="600">Inspection (600ms)</button>
+            </div>
+            <button id="trigger-motion-btn" class="btn-primary" style="padding:0.45rem 1.25rem;">
+              <span>⚡ Trigger Forge Strike</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Motion Animation Stage -->
+        <div class="motion-demo-stage">
+          <div id="motion-logo-box" class="motion-logo-box" title="Click to trigger animation">
+            <!-- Top-left half -->
+            <div class="split-half top-left">
+              <svg viewBox="0 0 100 100" width="100%" height="100%">
+                <polygon points="0,0 100,0 0,100" fill="#FF6B35"/>
+              </svg>
+            </div>
+            <!-- Bottom-right half -->
+            <div class="split-half bottom-right">
+              <svg viewBox="0 0 100 100" width="100%" height="100%">
+                <polygon points="100,0 100,100 0,100" fill="#F7F5F0"/>
+              </svg>
+            </div>
+          </div>
+
+          <div id="motion-status-pill" style="margin-top:1.5rem;font-family:monospace;font-size:0.8125rem;color:var(--color-orange);background:rgba(255,107,53,0.12);padding:0.35rem 0.85rem;border-radius:var(--radius-pill);border:1px solid rgba(255,107,53,0.25);">
+            Status: Resting State · Click mark or button to strike
+          </div>
+        </div>
+
+        <!-- Block-Wipe Transition Demo -->
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:2rem;">
+          <div>
+            <div class="card-label">Block-Wipe Transition</div>
+            <h4 style="font-size:1.15rem;font-weight:700;margin-bottom:0.5rem;">Solid Sweep Screen Transition</h4>
+            <p class="card-text" style="font-size:0.85rem;margin-bottom:1rem;">
+              Replaces dissolutive fades with a high-energy Warm Orange or Charcoal geometric sweep.
+            </p>
+            <button id="trigger-block-wipe-btn" class="btn-secondary" style="padding:0.4rem 1rem;font-size:0.8125rem;">
+              Run Block Wipe Sweep
+            </button>
+          </div>
+
+          <div class="block-wipe-stage" id="block-wipe-demo-stage">
+            <div id="block-wipe-curtain" class="block-wipe-curtain"></div>
+            <div id="block-wipe-content" style="text-align:center;font-family:var(--font-display);font-weight:800;font-size:1.25rem;">
+              <span style="color:var(--color-orange);">STATE A:</span> RAW IDEA
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12 Brand Governance -->
+  <section id="governance-system" class="guideline-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-number">12 Brand Governance</div>
+        <h2 class="section-title">System Integrity &amp; Approval Workflows</h2>
+        <p class="section-subtitle">
+          How the Form &amp; Foundry brand system is protected, maintained, and deployed across external and internal touchpoints.
+        </p>
+      </div>
+
+      <!-- 4-Step Approval Stepper -->
+      <h3 style="font-size:1.5rem;font-weight:800;margin-bottom:1.5rem;">4-Step Production Approval Workflow</h3>
+      <div class="workflow-stepper">
+        <div class="workflow-step-card active">
+          <div class="workflow-step-num">01</div>
+          <h4 style="font-size:1.15rem;font-weight:700;margin-bottom:0.5rem;">Draft Collateral</h4>
+          <p class="card-text" style="font-size:0.85rem;">
+            Author creates proposed material strictly utilizing approved Sora &amp; Inter typography and vector kits.
+          </p>
+        </div>
+
+        <div class="workflow-step-card">
+          <div class="workflow-step-num">02</div>
+          <h4 style="font-size:1.15rem;font-weight:700;margin-bottom:0.5rem;">Design Lead Review</h4>
+          <p class="card-text" style="font-size:0.85rem;">
+            Validate strict Ground Contrast Rule: Logo Charcoal on light grounds; Logo Off White on dark grounds.
+          </p>
+        </div>
+
+        <div class="workflow-step-card">
+          <div class="workflow-step-num">03</div>
+          <h4 style="font-size:1.15rem;font-weight:700;margin-bottom:0.5rem;">Consistency Audit</h4>
+          <p class="card-text" style="font-size:0.85rem;">
+            Verify vocabulary against banned fluff list, 45° corner geometry, and 50/35/15 ratio compliance.
+          </p>
+        </div>
+
+        <div class="workflow-step-card">
+          <div class="workflow-step-num">04</div>
+          <h4 style="font-size:1.15rem;font-weight:700;margin-bottom:0.5rem;">Production Release</h4>
+          <p class="card-text" style="font-size:0.85rem;">
+            Final approval stamped by Lyko Artistry and released for high-res print or digital distribution.
+          </p>
+        </div>
+      </div>
+
+      <!-- Modification Permissions Table -->
+      <h3 style="font-size:1.5rem;font-weight:800;margin-bottom:1.5rem;">Modification Rights &amp; Authority</h3>
+      <table class="governance-matrix">
+        <thead>
+          <tr>
+            <th>Role</th>
+            <th>Authority Level</th>
+            <th>Permitted Scope</th>
+            <th>Prohibited Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Design Lead</strong></td>
+            <td><span class="btn-pill active" style="font-size:0.75rem;">Full Authority</span></td>
+            <td>Master vector geometry, color palette definitions, type hierarchy, and adding new brand icons.</td>
+            <td>None (Central custodian of the brand identity).</td>
+          </tr>
+          <tr>
+            <td><strong>Internal Team</strong></td>
+            <td><span class="btn-pill" style="font-size:0.75rem;">Template Execution</span></td>
+            <td>Drafting slide decks, social graphics, and marketing proposals using pre-approved templates.</td>
+            <td>Modifying logo proportions, recoloring vector marks, or altering color hex codes.</td>
+          </tr>
+          <tr>
+            <td><strong>External Agencies</strong></td>
+            <td><span class="btn-pill" style="font-size:0.75rem;">Asset Placement Only</span></td>
+            <td>Placing official master SVGs, high-res mockups, and approved photography into licensed campaigns.</td>
+            <td>Any modifications whatsoever. All deliverables subject to mandatory Step 02 audit.</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </section>
 
